@@ -27,7 +27,9 @@ drives an external servo drive in encoder-follow mode with quadrature.
 | Size | 58 x 58 mm | ruled 2026-09-22 |
 | Heatsink | 40 x 40 mm on the BACK, centered | standard fan/heatsink footprint; screws in the 9 mm ring |
 | Through-hole keep-out | none in the central 40 x 40; through-hole only in the 9 mm edge ring (XT30, connectors that must be through-hole) | ruled 2026-09-22 |
-| Braking resistors | ON the board, cooled by the back heatsink | decide: resistors on the bottom under the sink (thermal pad on the bodies) vs on top with filled+capped thermal vias |
+| Braking resistors | ON the board, top side, heat through filled+capped thermal via arrays to a back copper landing under the heatsink | ruled 2026-09-22: single-sided assembly; land the via array on the resistor's return terminal (DC-) so the back pour is quiet DC, not the switched node |
+| Assembly | single-sided, everything on top | ruled 2026-09-22 |
+| Vias | filled and capped throughout (via-in-pad allowed) | ruled 2026-09-22; a fab option, budget it in BOM.md |
 | Brake chopper | on the drive (external-resistor terminals) or on this board? | decides whether the board is two fat traces (4-layer 2 oz) or a power stage (6-layer) |
 | Motor power connector | XT30 | 30 A class, brake pulses |
 
@@ -38,6 +40,5 @@ drives an external servo drive in encoder-follow mode with quadrature.
 
 ## Open questions
 1. Peak and continuous current on the input, and the brake pulse current.
-2. Resistors under the sink (bottom) vs thermal vias (top, filled+capped): decides a fab option.
-3. Insulation under the heatsink: thermal pad rating for the bus voltage; solder mask is not insulation.
-4. Whether the P4's high-speed lanes (USB HS, MIPI) will ever be routed; that is what would justify six layers on signal grounds.
+2. Thermal pad rating and thickness under the sink for the bus voltage; heatsink grounded or floating.
+3. Whether the P4's high-speed lanes (USB HS, MIPI) will ever be routed; that is what would justify six layers on signal grounds.

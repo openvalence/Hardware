@@ -13,8 +13,9 @@ day the schematic exists.
 | USB-C, JST-XH/PH headers, power terminal, buttons, LED | $6-10 |
 | Passives, misc | $3 |
 | **Parts** | **$35-50** |
-| PCB, 6-layer, ~100 x 100 mm, 1 oz | $12-20 |
-| PCB alternative, 4-layer, 2 oz outer | $8-12 |
+| PCB, 58 x 58 mm, filled+capped vias (via-in-pad), 2 oz outer: 4-layer | $10-16 |
+| same, 6-layer | $16-24 |
+| Braking resistors (SMD power, bank) + thermal pad | $6-12 |
 | Assembly, two-sided, extended-part fees included | $30-60 |
 | **All-in, qty 5** | **$80-130** |
 | All-in, qty 50 | $55-80 |
