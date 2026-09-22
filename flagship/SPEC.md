@@ -33,6 +33,25 @@ drives an external servo drive in encoder-follow mode with quadrature.
 | Brake chopper | on the drive (external-resistor terminals) or on this board? | decides whether the board is two fat traces (4-layer 2 oz) or a power stage (6-layer) |
 | Motor power connector | XT30 | 30 A class, brake pulses |
 
+## Brake resistor sizing case (2026-09-22)
+Measured on the bench rig: the drive's chopper does not fire on normal
+deceleration (the bus capacitors absorb it); it fires only under an OVERHAULING
+load -- the carriage pushed in the direction it is already moving -- and then for
+at most half of each back-and-forth cycle. Size the bank for that:
+- peak while pushed: P = F_push x v_max (e.g. 100 N x 0.5 m/s = 50 W);
+- cycle average: half of the peak, only while someone is fighting the machine;
+- normal use: ~0 W.
+A 40 x 40 x 20 mm sink is ~3-4 C/W in still air (fine for the pulses, thermal mass
+carries seconds of pushing) and ~1 C/W with the 40 mm fan the footprint accepts,
+which covers sustained abuse. The bank's resistance MUST match the drive's
+external-brake-resistor spec; the drive's chopper voltage and that resistance set
+the true peak (V_chop^2 / R). Policy hook: INA228 die temperature over a threshold
+-> Flux amber and a lower speed ceiling, which reduces the pushed power at the
+source (P = F x v).
+Respin insurance: bring the brake net to two pads in the edge ring with the
+on-board bank behind a removable link, so an external resistor can replace the
+bank without a new board.
+
 ## Interfaces the firmware already expects
 - SDIO slot 1 to the C6: CLK 43, CMD 44, D0 45, D1 46, D2 47, D3 48, slave reset 42 (bench pins; final pins are this board's call).
 - Quadrature out on LP-core-capable GPIO (bench: LPG15 = A, LPG12 = B).
