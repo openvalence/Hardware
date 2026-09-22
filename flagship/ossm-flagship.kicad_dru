@@ -8,7 +8,7 @@
 
 (rule "PWR class never runs thin"
   (condition "A.NetClass == 'PWR'")
-  (constraint track_width (min 2.0mm)))
+  (constraint track_width (min 4.0mm)))
 
 (rule "PWR class vias carry current"
   (condition "A.Type == 'Via' && A.NetClass == 'PWR'")

@@ -29,7 +29,9 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | Regen shunt on-board (two TO-263 over the via field) with the external-resistor connector and the parallel/replacement solder jumper | as section 5's "likely" |
 | 2026-09-22 | RS485 via a 3.3 V transceiver (THVD1450/MAX3485 class) from the P4 UART in RS485 half-duplex mode; NOT isolated (the drive's comms side is opto-isolated and 5 V-fed from this board); quadrature via 74AHCT125 | new detail under section 11 |
 | 2026-09-22 | XT30 for the 36 V bus; signals in a separate shell | as section 11 |
-| 2026-09-22 | Stack-up: 6-layer, mostly pours, valued as heat spreading as much as routing; 4-layer 2 oz remains the alternative until the fab quote and the thermal numbers argue | leaning, not final; arithmetic in `stackup.md` says layer count is routing, copper weight and the via field are thermal |
+| 2026-09-22 | Stack-up: 6-layer, mostly pours, valued as heat spreading as much as routing; 4-layer 2 oz remains the alternative until the fab quote and the thermal numbers argue | superseded 2026-09-22 (below) |
+| 2026-09-22 | **Fab spec, quoted at JLCPCB:** 6-layer, **1 oz every layer**, TG155, 1.6 mm, white mask / black silk, epoxy filled and capped vias (free at 6 layers), **0.3 mm via drill** throughout, OSP finish with the fab vacuum-packing in groups so unopened boards keep, or ENIG for ~$20 more on the order; finish not yet chosen. 40 pcs quoted at $112 (5 pcs was ~$20 less) | supersedes the 6-layer "leaning" row and the 2 oz outer proposal in `stackup.md`; arithmetic there re-run for 1 oz |
+| 2026-09-22 | First batch is hand-soldered by the operator; group-buy boards are assembled from the same 40; **parts purchase on hold**; assembly cost decided when gerbers exist | new |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).

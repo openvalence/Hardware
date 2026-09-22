@@ -7,41 +7,40 @@ numbers come from JLCPCB's published multilayer capabilities the same day.
 The KiCad project (`ossm-flagship.kicad_pcb`, Board Setup) carries the same
 values; this file is why they are what they are.
 
-## 1. Fab constraints entered in Board Setup (JLCPCB multilayer, 2 oz outer)
+## 1. Fab constraints entered in Board Setup (JLCPCB multilayer, 1 oz, as quoted 2026-09-22)
 
 | Constraint | Value | Source |
 |---|---|---|
-| Min trace / space, 2 oz | 0.15 / 0.15 mm | JLC: 6/6 mil at 2 oz (1 oz would allow 0.09) |
-| Min via drill / diameter | 0.2 / 0.45 mm | JLC floor is 0.15 / 0.25; 0.2 keeps the fill process comfortable |
-| Min annular width | 0.125 mm | JLC recommends 0.20, absolute min 0.15 at 1 oz; 0.45 dia on 0.2 drill gives 0.125 |
+| Min trace / space, 1 oz | 0.1 / 0.1 mm | JLC: 3.5/3.5 mil at 1 oz; 0.1 leaves margin |
+| Via drill / diameter | 0.3 / 0.6 mm, one size | operator ruling: 0.3 mm vias throughout; 0.15 annular |
+| Min annular width | 0.15 mm | JLC absolute min at 1 oz |
 | Hole to hole | 0.2 mm | JLC |
 | Copper to board edge | 0.3 mm | JLC min 0.2 |
-| Via treatment | filled + capped, tented both sides | JLC: default process on 6-layer, via-in-pad legal for 0.15 to 0.55 mm diameter |
-| Finish | ENIG | via-in-pad and the bare copper pads want it |
-| Thickness | 1.6 mm | |
+| Via treatment | epoxy filled + capped, tented both sides | free at 6 layers; via-in-pad legal for 0.15 to 0.55 mm diameter |
+| Finish | OSP (quoted); ENIG the alternative | OSP ages on the shelf and with handling; ENIG if boards wait for the group buy |
+| Thickness, material, colors | 1.6 mm, TG155, white mask, black silk | |
 
-Net classes: `Default` 0.2 mm track / 0.45-0.2 via; `PWR` 2.5 mm track, 0.6-0.3
-via, 0.3 clearance; `RS485` 0.25 mm pair. Custom rules in
+Net classes: `Default` 0.2 mm track; `PWR` 5.0 mm track, 0.3 clearance; `RS485`
+0.25 mm pair; every class 0.6/0.3 vias. Custom rules in
 `ossm-flagship.kicad_dru` enforce the SPEC.md geometry rulings (through-hole
-only in the ring, PWR never below 2.0 mm, PWR vias 0.3 mm drill minimum).
+only in the ring, PWR never below 4.0 mm, 0.3 mm drill floor).
 
 ## 2. Stackup entered in the board
 
 Dielectrics are JLC's published `JLC06161H-7628` (the 1 oz / 0.5 oz calculator
 stackup: 7628 prepreg 0.2104, core 0.40, 7628 0.2028, core 0.40, 7628 0.2104).
-Copper is set to the PROPOSAL below, not that stackup's default. **When the
-quote fixes the real stackup for 2 oz outer, re-enter the dielectric rows from
-the order page.** Nothing on this board is impedance controlled, so the
+Copper is 1 oz on every layer as quoted. **Re-enter the dielectric rows from
+the order page if the TG155 stackup differs.** Nothing on this board is impedance controlled, so the
 dielectric numbers only affect the 3D view and the thickness sum.
 
 | Layer | Copper | Job |
 |---|---|---|
-| F.Cu | 2 oz | every component, the whole 10 A path, the two shunt resistor pads and their via fields |
+| F.Cu | 1 oz | every component, the whole 10 A path, the two shunt resistor pads and their via fields |
 | In1.Cu | 1 oz | GND |
 | In2.Cu | 1 oz | 36 V bus pour (return for the FET switching loops sits on In1) |
 | In3.Cu | 1 oz | 5 V / 3.3 V / signal escape |
 | In4.Cu | 1 oz | GND |
-| B.Cu | 2 oz | bare thermal pour under the 40 x 40 sink, nothing else (rule area `back_face`) |
+| B.Cu | 1 oz | bare thermal pour under the 40 x 40 sink, nothing else (rule area `back_face`) |
 
 ## 3. Current: the copper is not the problem
 
@@ -57,8 +56,9 @@ k = 0.024 (A in mil^2).
 | 0.5 oz internal | 24.2 mm | |
 
 The whole 10 A path (XT30, eFuse, motor switch, INA228 shunt, motor terminal)
-fits on F.Cu at 2 oz as a pour a few mm wide. Its resistance is noise: a
-3 mm x 40 mm 2 oz path is ~13 squares x 0.25 mOhm = 3.3 mOhm, 0.33 W at 10 A.
+fits on F.Cu at 1 oz as a 5 mm pour (4.6 mm is +20 degC, 7.1 mm is +10). Its
+resistance is noise: a 5 mm x 40 mm 1 oz path is 8 squares x 0.49 mOhm =
+3.9 mOhm, 0.39 W at 10 A. The PWR class defaults to 5.0 mm for this reason.
 **Keep the 10 A path on F.Cu and never change layers with it.** Then the via
 question below is only about heat.
 
@@ -96,14 +96,16 @@ sheet from board center to edge, 29 mm over a 58 mm width: R = 0.5 / (k t).
 | Stack | Lateral R |
 |---|---|
 | 6 layers, all 2 oz | 3.0 K/W |
-| 6 layers, 2 oz outer + 1 oz inner (proposal) | 4.6 K/W |
+| 6 layers, 2 oz outer + 1 oz inner | 4.6 K/W |
+| **6 layers, all 1 oz (as quoted)** | **6.2 K/W** |
 | 6 layers, 2 oz outer + 0.5 oz inner (JLC default) | 6.0 K/W |
 | 4 layers, all 2 oz | 4.5 K/W |
 | 4 layers, 2 oz outer + 1 oz inner | 6.6 K/W |
 
-**So 6 layers with 1 oz inner spreads exactly as well as 4 layers all 2 oz.**
-Layer count is a routing decision, not a thermal one; copper weight is the
-thermal knob, and even that is second order next to the via field and the sink.
+**Six layers of 1 oz spread a little worse than four of 2 oz.** Layer count is a
+routing decision, not a thermal one; copper weight is the thermal knob, and
+even that is second order next to the via field and the sink, which is why the
+1 oz ruling costs nothing that matters in the totals below.
 
 **TIM.** The heat leaves B.Cu through two ~60 mm^2 spots, not the whole
 40 x 40. A 0.5 mm gap pad at 3 W/mK is 2.8 K/W per spot; 0.1 mm of grease or a
