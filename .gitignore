@@ -10,6 +10,7 @@
 _autosave-*
 fp-info-cache
 .history/
+.mcp-backups/
 ~*.lck
 *.lck
 # fabrication outputs are regenerated from the design; track only what a fab needs, deliberately
