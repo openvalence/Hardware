@@ -1,4 +1,4 @@
-# hardware
+# Hardware
 
 Hardware for the Valence ecosystem: the **OSSM Flagship** controller board
 (ESP32-P4 + ESP32-C6, runs [Nucleus](https://github.com/openvalence/Nucleus)),
