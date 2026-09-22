@@ -1,0 +1,19 @@
+(version 1)
+
+# SPEC.md rulings 2026-09-22, mechanized. Rule areas "center40" and "back_face" live in the board.
+
+(rule "through-hole pads only in the 9 mm edge ring"
+  (condition "A.Pad_Type == 'Through-hole' && A.intersectsArea('center40')")
+  (constraint disallow pad))
+
+(rule "PWR class never runs thin"
+  (condition "A.NetClass == 'PWR'")
+  (constraint track_width (min 2.0mm)))
+
+(rule "PWR class vias carry current"
+  (condition "A.Type == 'Via' && A.NetClass == 'PWR'")
+  (constraint hole_size (min 0.3mm)))
+
+(rule "through-hole drill stays above the fab floor"
+  (condition "A.Pad_Type == 'Through-hole'")
+  (constraint hole_size (min 0.3mm)))

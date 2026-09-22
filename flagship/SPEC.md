@@ -29,7 +29,7 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | Regen shunt on-board (two TO-263 over the via field) with the external-resistor connector and the parallel/replacement solder jumper | as section 5's "likely" |
 | 2026-09-22 | RS485 via a 3.3 V transceiver (THVD1450/MAX3485 class) from the P4 UART in RS485 half-duplex mode; NOT isolated (the drive's comms side is opto-isolated and 5 V-fed from this board); quadrature via 74AHCT125 | new detail under section 11 |
 | 2026-09-22 | XT30 for the 36 V bus; signals in a separate shell | as section 11 |
-| 2026-09-22 | Stack-up: 6-layer, mostly pours, valued as heat spreading as much as routing; 4-layer 2 oz remains the alternative until the fab quote and the thermal numbers argue | leaning, not final |
+| 2026-09-22 | Stack-up: 6-layer, mostly pours, valued as heat spreading as much as routing; 4-layer 2 oz remains the alternative until the fab quote and the thermal numbers argue | leaning, not final; arithmetic in `stackup.md` says layer count is routing, copper weight and the via field are thermal |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).
@@ -37,3 +37,5 @@ document's "likely" option it says so. Do not restate the record here.
 - INA228 bus placement vs the C6's I2C (section 13).
 - What limits the drive to 4.1-4.5 A when the 60 series runs to 7 A (section 13).
 - Thermal pad rating and thickness under the sink; sink grounded or floating.
+- Regen shunt pulse energy: 189 W peak x half-stroke time against the PWR263S-35 pulse curve, or a wirewound TO-263 (stackup.md section 5).
+- TIM and heatsink part choice; JLC plated-wall thickness for the via arithmetic.

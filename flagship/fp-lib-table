@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "flagship")(type "KiCad")(uri "${KIPRJMOD}/lib/flagship.pretty")(options "")(descr "LCSC pulls via easyeda2kicad"))
+)

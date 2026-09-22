@@ -24,3 +24,7 @@ Thumbs.db
 *.db
 .beads-credential-key
 .beads/proxieddb/
+
+# tooling
+.venv/
+*.wrl
