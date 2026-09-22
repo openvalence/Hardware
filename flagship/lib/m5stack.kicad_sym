@@ -111,7 +111,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Manufacturer" "ESPRESSIF(乐鑫)"
+		(property "Manufacturer" "Espressif"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

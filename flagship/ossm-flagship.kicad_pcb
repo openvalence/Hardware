@@ -219,6 +219,16 @@
 		(layer "Edge.Cuts")
 		(uuid "317e081b-e2e1-449a-b230-3278ee03e94b")
 	)
+	(gr_text "HELLO FROM CLAUDE"
+		(at 129 129 0)
+		(layer "F.SilkS")
+		(uuid "faf901ca-6c49-480d-931c-a82507ff17c1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
 	(zone
 		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu")
 		(uuid "2ba44e5c-8de9-44f0-99c7-e964d0508be2")

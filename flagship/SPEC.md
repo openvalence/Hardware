@@ -38,6 +38,8 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | **Signal connectors: JST GH (1.25 mm, latching), right-angle SMD (SMxxB-GHS-TB)**: drive motion pairs, drive comms/RS485, fan, thermistor | section 11's "separate signal connector", now named |
 | 2026-09-22 | Stamp-AddOn C6 is a daughterboard stacked on top of the stamp; its antenna sits above the stamp, so the radio sets no board-edge or copper-keepout constraint. Keep tall metal (electrolytic cans) from standing above the add-on's height beside it | resolves the antenna open item |
 | 2026-09-22 | Harness: pre-crimped GH leads on the board end, operator crimps the far end | new |
+| 2026-09-22 | **Motion is emitted by the P4 (LP-core quadrature); no RP2350 on the board** | supersedes section 8's "plus an RP2350 for motion"; operator dropped it after the P4 LP-core emitter proved out on the bench |
+| 2026-09-22 | **Passives: common, slightly larger sizes.** 0805 default, 1206 for power, bulk and high-voltage positions, nothing below 0603. Operator picks connectors; the schematic carries generic connector placeholders until then | new |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).
