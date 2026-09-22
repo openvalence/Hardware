@@ -32,6 +32,10 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | Stack-up: 6-layer, mostly pours, valued as heat spreading as much as routing; 4-layer 2 oz remains the alternative until the fab quote and the thermal numbers argue | superseded 2026-09-22 (below) |
 | 2026-09-22 | **Fab spec, quoted at JLCPCB:** 6-layer, **1 oz every layer**, TG155, 1.6 mm, white mask / black silk, epoxy filled and capped vias (free at 6 layers), **0.3 mm via drill** throughout, OSP finish with the fab vacuum-packing in groups so unopened boards keep, or ENIG for ~$20 more on the order; finish not yet chosen. 40 pcs quoted at $112 (5 pcs was ~$20 less) | supersedes the 6-layer "leaning" row and the 2 oz outer proposal in `stackup.md`; arithmetic there re-run for 1 oz |
 | 2026-09-22 | First batch is hand-soldered by the operator; group-buy boards are assembled from the same 40; **parts purchase on hold**; assembly cost decided when gerbers exist | new |
+| 2026-09-22 | **Power connectors: two XT30, right-angle (XT30PW-M), bus IN and bus OUT to the motor**, in the edge ring | as section 11 (XT30 for power); fixes the count at two |
+| 2026-09-22 | **Stamp-P4 centered on one edge, USB-C facing out of that edge** ("down" in board view) | new; section 8 names the stamp but not its position |
+| 2026-09-22 | **Bulk capacitance symmetric about the stamp's centerline**: SMD aluminum electrolytic (polymer) plus MLCC, mirrored left/right | section 7 detail; electrolytics are SMD cans so the through-hole ruling holds |
+| 2026-09-22 | **Signal connectors: JST GH (1.25 mm, latching), right-angle SMD (SMxxB-GHS-TB)**: drive motion pairs, drive comms/RS485, fan, thermistor | section 11's "separate signal connector", now named |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).
@@ -41,3 +45,6 @@ document's "likely" option it says so. Do not restate the record here.
 - Thermal pad rating and thickness under the sink; sink grounded or floating.
 - Regen shunt pulse energy: 189 W peak x half-stroke time against the PWR263S-35 pulse curve, or a wirewound TO-263 (stackup.md section 5).
 - TIM and heatsink part choice; JLC plated-wall thickness for the via arithmetic.
+- Accessory power output ("a few amps" at 12 V, section 10) exceeds JST GH's ~1 A per pin: needs its own connector class.
+- External regen-resistor connector (section 5): ~4 A pulses at the ~45 V clamp; not a GH job either. Third XT30 or a latching 2-pin power connector.
+- Stamp-AddOn C6 antenna position once the stamp sits on the edge: keepout on all six layers and clear of the back heatsink. Needs the M5Stack mechanical drawing.

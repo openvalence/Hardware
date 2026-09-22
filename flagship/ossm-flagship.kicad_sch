@@ -43,6 +43,13 @@
 				(justify left bottom)
 			)
 		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(page "3")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 111.76 83.82)
@@ -80,6 +87,13 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+			)
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(page "6")
+				)
 			)
 		)
 	)
@@ -121,6 +135,13 @@
 				(justify left bottom)
 			)
 		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(page "4")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 198.12 83.82)
@@ -158,6 +179,13 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+			)
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(page "8")
+				)
 			)
 		)
 	)
@@ -199,6 +227,13 @@
 				(justify left bottom)
 			)
 		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(page "7")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 25.4 30.48)
@@ -236,6 +271,13 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+			)
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(page "2")
+				)
 			)
 		)
 	)
@@ -277,10 +319,18 @@
 				(justify left bottom)
 			)
 		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(page "5")
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
