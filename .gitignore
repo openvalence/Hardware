@@ -9,6 +9,7 @@
 *.kicad_pro-bak
 _autosave-*
 fp-info-cache
+.history/
 ~*.lck
 *.lck
 # fabrication outputs are regenerated from the design; track only what a fab needs, deliberately
