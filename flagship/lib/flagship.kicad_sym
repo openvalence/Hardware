@@ -2161,7 +2161,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin output line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "OUT"
@@ -2179,7 +2179,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "V-"
@@ -2197,7 +2197,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "-IN"
@@ -2215,7 +2215,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "+IN"
@@ -2233,7 +2233,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "SHDN"
@@ -2251,7 +2251,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "V+"
@@ -2471,7 +2471,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -7.62 0 0)
 				(length 5.08)
 				(name "REF"
@@ -2489,7 +2489,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 2.54 10.16 270)
 				(length 5.08)
 				(name "C"
@@ -2507,7 +2507,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 2.54 -10.16 90)
 				(length 5.08)
 				(name "A"
