@@ -5209,7 +5209,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Pre-ordered-Products_Analog-Devices_LTC4364IS-2-PBF_Analog-Devices-ADI-LINEAR-LTC4364IS-2-PBF_C688309.html"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc4364-1-4364-2.pdf"
 			(at 71.12 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5220,7 +5220,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Order LTC4364IS-1#PBF (latch-off). NOT -2 (auto-retry)."
 			(at 71.12 113.03 0)
 			(hide yes)
 			(show_name no)
