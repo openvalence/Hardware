@@ -51,16 +51,15 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | **Connectors are placed by the operator during layout.** Schematic sheets end every off-board signal in a named net (global label); existing generic connector placeholders are disposable | new |
 | 2026-09-22 | **Drive IO detailed**: THVD1450 (DE and /RE tied, 120 R termination DNP), SM712 RS485 ESD at the cable end, KiCad 74AHCT125 per-gate symbol (gates 1-2 drive DRV_PU+ / DRV_DIR+, gates 3-4 disabled), status inputs 10k pull-up to +3V3_SYS + 1k series into the P4 | sections 11-12 |
 | 2026-09-22 | **Sensing detailed**: INA228 at 0x40 on the Kelvin taps, ALERT shared with the motor-switch EN; I2C pull-ups fitted only if the stamp/add-on lacks them; thermistor 10k pull-up + 1k/100n into ADC1; fan supply by solder jumper (12 V or 5 V), tach 10k pull-up + 1k series, **PWM open-drain through a 2N7002** because a fan pulls its PWM input to 5 V and the P4 is not 5 V tolerant (firmware inverts) | sections 10, 12 |
+| 2026-09-22 | **Input protection detailed** per LTC4364 datasheet Figure 1: 2.5 mOhm sense (20 A, 10 A folded back into a short), 22 nF HGATE (~40 ms ramp, ~0.4 A inrush, timer idle at start), 100 nF timer (~1 ms in a dead short), **output clamp 51.5 V (402k/10k), deliberately above the 44.7 V regen clamp so regen is never read as a surge by the latching -1**, UV 20 V / OV 50 V (374k/15k/10k), 15 V gate zeners (datasheet, >= 24 V), SMBJ45CA bidirectional input TVS, fault LED resistor 27k (FLT sinks <= 2 mA) | section 3 |
+| 2026-09-22 | **Power FETs: Nexperia PSMN3R7-100BSE (100 V, 3.95 mOhm, D2PAK, enhanced linear-mode SOA) in all five power positions** (input Q1/Q2, motor switch Q401/Q402, regen clamp Q501): one BOM line. SOA ~30 A at 36 V for 1 ms (25 C) vs the 10 A folded-back short on Q1. Pre-charge Q403: Diodes DMN10H220L (100 V, SOT-23). Motor-switch bootstrap raised to 1 uF for 2 x 176 nC gate charge | resolves the FET open items |
+| 2026-09-22 | **Regen resistors: 3 x Vishay D2TO35M 24 R = 8 R** (operator: 2-3 to spread the load). Multi-pulse rated, element isolated from the tab (2 kV), tabs tied to GND and stitched into the back sink. ~2.3 W each continuous, ~47 W each at the 141 W powered peak | resolves the TO-263 resistor and pulse-energy open items; Q501's own tab is the switch node, not ground |
 
 ## Open (from the record's section 13, plus today)
-- eFuse coverage at 10 A / 36 V (section 13).
 - LPG0-15 to GPIO map before committing A/B pins (section 13).
 - INA228 bus placement vs the C6's I2C (section 13).
 - What limits the drive to 4.1-4.5 A when the 60 series runs to 7 A (section 13).
 - Thermal pad rating and thickness under the sink; sink grounded or floating.
-- Regen shunt pulse energy: 189 W peak x half-stroke time against the PWR263S-35 pulse curve, or a wirewound TO-263 (stackup.md section 5).
 - TIM and heatsink part choice; JLC plated-wall thickness for the via arithmetic.
 - Accessory power output ("a few amps" at 12 V, section 10) exceeds JST GH's ~1 A per pin: needs its own connector class.
 - External regen-resistor connector (section 5): ~4 A pulses at the ~45 V clamp; not a GH job either. Third XT30 or a latching 2-pin power connector.
-- Motor-switch FETs: Q401/Q402 100 V, D2PAK class, low Rds(on), Qg within the 470 nF bootstrap budget; Q403 100 V SOT-23 >= 1 A pulse. Generic Q_NMOS symbols until picked (their D/G/S pin letters need the real part's numbered pads).
-- Regen clamp FET Q501 (100 V, >= 12 A with an external resistor in parallel) and the TO-263 resistor part (pulse-energy item above).
