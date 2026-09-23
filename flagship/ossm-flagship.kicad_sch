@@ -705,6 +705,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -5498,6 +5685,320 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:AO3401A"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AO3401A"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "P-Channel MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AO3401A_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AO3401A_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "flagship:INA228AIDGSR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6815,164 +7316,6 @@
 					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "flagship:R_D2PAK_TAB"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor in D2PAK with an isolated tab (pads 1/3 resistor, pad 2 tab)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_D2PAK_TAB_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_D2PAK_TAB_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.524)
-					(name "TAB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -11629,7 +11972,7 @@
 	)
 	(rectangle
 		(start 523.24 48.26)
-		(end 695.96 138.43)
+		(end 692.71 135.89)
 		(stroke
 			(width 0.254)
 			(type dash)
@@ -11641,7 +11984,7 @@
 	)
 	(rectangle
 		(start 368.3 187.96)
-		(end 449.58 292.1)
+		(end 449.58 285.75)
 		(stroke
 			(width 0.254)
 			(type dash)
@@ -11687,6 +12030,17 @@
 		)
 		(uuid "e49dce29-61b4-4bbc-91a2-b1bd0bafc783")
 	)
+	(text "R521-R544: 24 x 200R AS122WJ0201T4E (2512, LCSC C2770484), 8.33 R total"
+		(exclude_from_sim no)
+		(at 553.72 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "050f2071-0d40-4be5-b302-30c0935ea767")
+	)
 	(text "DRIVE INTERFACE"
 		(exclude_from_sim no)
 		(at 369.57 295.91 0)
@@ -11700,7 +12054,7 @@
 		)
 		(uuid "0e3bd821-5e3a-496e-a7e4-6beb433ca015")
 	)
-	(text "SENSING (record sections 10, 12). U11 INA228 on the R2 Kelvin taps (Input sheet):\n  route\n  INA_SENSE_P/N as a tight pair, INA beside the shunt, away from switch nodes.\n1 mOhm: 10 mV at 10 A in the +-163.84 mV range. Die temperature = board temperature.\n  A0/A1 =\n  GND (0x40).\nINA_ALERT_N (open drain) is also the motor-switch EN: over-current / power /\n  temperature limits\n  cut the motor with no MCU.\nR24/R25: fit only if the stamp or the C6 add-on has no I2C pull-ups (SPEC open item\n  on the\n  shared bus).\nConnectors are the operator's: THERM_IN (NTC to GND), FAN_V / GND / FAN_TACH_IN /\n  FAN_PWM_OUT.\n  JP2 picks 12 V or 5 V fans (section 10).\nQ701: a fan's PWM input pulls up to 5 V inside the fan and the P4 is not 5 V\n  tolerant, so PWM\n  is open-drain through a FET; firmware inverts."
+	(text "SENSING (record sections 10, 12). U11 INA228 on the R2 Kelvin taps (Input sheet):\n  route INA_SENSE_P/N as a tight pair, INA beside the shunt, away from switch nodes.\n1 mOhm: 10 mV at 10 A in the +-163.84 mV range. Die temperature = board temperature.\n  A0/A1 = GND (0x40).\nINA_ALERT_N (open drain) is also the motor-switch EN: over-current / power /\n  temperature limits cut the motor with no MCU.\nR24/R25: fit only if the stamp or the C6 add-on has no I2C pull-ups (SPEC open item\n  on the shared bus).\nConnectors are the operator's: THERM_IN (NTC to GND), 3-pin FAN (GND, +V, TACH). JP2\n  sets the fan supply: 5 V default, 12 V by jumper (section 10).\nFan PWM is high-side: Q702 AO3401A switches the fan's +V, driven by Q701 2N7002\n  (P4 high = on), so the fan ground stays solid and the tach stays valid; PWM\n  ~20-25 kHz. D701 B5819W is the flyback. The tach reads only while the fan is\n  powered: firmware reads it during the on-time or with a brief full-on pulse.\nGate divider: R702 1k / R703 470R hold Vgs under the AO3401A's 12 V rating on the\n  12 V setting (-8.2 V; -3.4 V at 5 V)."
 		(exclude_from_sim no)
 		(at 474.98 278.13 0)
 		(effects
@@ -11800,7 +12154,7 @@
 		)
 		(uuid "9e913635-d64d-4246-a2ad-7f6c8f1a1ab8")
 	)
-	(text "REGEN SHUNT (record section 5). Self-acting clamp, no firmware: U3 compares the\n  divided\n  bus to U4's 1.24 V; R503 hysteresis.\nR501/R502/R503 348k/10k/3.01M: ON 44.5 V, OFF 43.2 V (1.4 V hysteresis, the OSSM alt\n  board's value). Legal above the GST360A36's 37.8 V worst OVP only because the\n    input\n  section blocks reverse current.\nR509 || R510 || R511: Vishay D2TO35M 24R each = 8R (multi-pulse rated; element\n  isolated\n  from the tab, tabs to GND over 0.8 mm via fields into the back sink). ~7 W\n    continuous\n  total = 2.3 W each; 141 W peak = 47 W each.\nJ3 + JP501: external resistor. JP501 bridged = parallel with the on-board pair; cut\n  =\n  external replaces it. Size Q501 for the lowest combined R.\nD503 SS310 freewheels the resistor-loop current back to +BUS at turn-off, so trace\n  and\n  flying-lead inductance clamps at bus + 0.85 V. D501 stays as the backstop.\nU3 drives Q501's gate directly through R505 (TLV1805 push-pull, ~100 mA: ~0.7 us\n  edges,\n  ~0.25 W worst case in Q501; slow edges keep L di/dt small, no driver or snubber\n    needed).\n  R507/R508: gate pull-down + CLAMP_MON (2.98 V) to a P4 capture pin: on-time x V^2\n    / 8R =\n  clamp power, published over Valence. D502 lights while the clamp conducts. TH501\n    NTC\n  sits beside the D2TO35Ms -> SHUNT_TEMP (ADC1).\nU3 SHDN (active high) tied low: always armed. +12V from the 12 V buck, which starts\n  from\n  the bus by itself. C501 filters buck noise off the divider.\nQ501 IPB042N10N3G: its tab is the switch node (drain), NOT ground: give it its own\n  copper, not the grounded resistor via field."
+	(text "REGEN SHUNT (record section 5). Self-acting clamp, no firmware: U3 compares the\n  divided bus to U4's 1.24 V; R503 hysteresis.\nR501/R502/R503 348k/10k/3.01M: ON 44.5 V, OFF 43.2 V (1.4 V hysteresis, the OSSM alt\n  board's value). Legal above the GST360A36's 37.8 V worst OVP only because the\n  input section blocks reverse current.\nR521-R544: 24 x 200R UniOhm AS122WJ0201T4E anti-surge 2512 in parallel = 8.33 R,\n  2 W each at 70 C (48 W bank rating); ~7 W continuous = 0.3 W each, 141 W peak =\n  5.9 W each. Each chip bridges a +BUS and a switch-node copper island, stitched\n  by filled vias to bottom islands under the 40 x 40 thermal-tape heatsink.\nJ3 + JP501: external resistor. JP501 bridged = parallel with the on-board bank;\n  cut = external replaces it. Size Q501 for the lowest combined R.\nD503 SS310 freewheels the resistor-loop current back to +BUS at turn-off, so trace\n  and flying-lead inductance clamps at bus + 0.85 V. D501 stays as the backstop.\nU3 drives Q501's gate directly through R505 (TLV1805 push-pull, ~100 mA: ~0.7 us\n  edges, ~0.25 W worst case in Q501; slow edges keep L di/dt small, no driver or\n  snubber needed).\nR507/R508: gate pull-down + CLAMP_MON (2.98 V) to a P4 capture pin: on-time x V^2\n  / 8.33 R = clamp power, published over Valence. D502 lights while the clamp\n  conducts. TH501 NTC sits beside the resistor bank -> SHUNT_TEMP (ADC1).\nU3 SHDN (active high) tied low: always armed. +12V from the 12 V buck, which starts\n  from the bus by itself. C501 filters buck noise off the divider.\nQ501 IPB042N10N3G: its tab is the switch node (drain), NOT ground: give it its own\n  copper."
 		(exclude_from_sim no)
 		(at 588.01 339.09 0)
 		(effects
@@ -11882,10 +12236,22 @@
 		(uuid "f575d6f4-6928-4f82-954f-8eed46ac9732")
 	)
 	(junction
-		(at 401.32 279.4)
+		(at 622.3 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "00c3241f-7c32-4d39-ba29-1850fd50fa77")
+		(uuid "00aecf5a-0a5b-492a-80be-4f0c218e2ee8")
+	)
+	(junction
+		(at 584.2 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02eb160d-e07f-4827-b5ae-7e1c8368f81b")
+	)
+	(junction
+		(at 553.72 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03f7f0b7-4cc6-4c55-b88a-7d0348e333ed")
 	)
 	(junction
 		(at 449.58 63.5)
@@ -11910,6 +12276,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a8a66df-6c5d-4a86-8e9f-6a9b77eeedcf")
+	)
+	(junction
+		(at 591.82 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d958c71-6d3c-4761-82d8-2124c4d2c138")
 	)
 	(junction
 		(at 401.32 116.84)
@@ -11954,10 +12326,22 @@
 		(uuid "1b08059f-ece4-4986-8c6a-fd9a7e2b3a43")
 	)
 	(junction
+		(at 584.2 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d057964-41c0-43ad-b3e0-b1d4831a25ba")
+	)
+	(junction
 		(at 96.52 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e45bdfd-f7bf-4b16-a699-0f3b232d3988")
+	)
+	(junction
+		(at 591.82 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e8cad23-cb0f-4b56-9bdd-bf991646bfa5")
 	)
 	(junction
 		(at 157.48 55.88)
@@ -11970,6 +12354,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2213abb1-f3fe-49b5-bba6-79211f304efb")
+	)
+	(junction
+		(at 406.4 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "227fd0e7-05fe-4d05-a974-9a004849589f")
 	)
 	(junction
 		(at 96.52 236.22)
@@ -12026,16 +12416,22 @@
 		(uuid "2ca63443-8c61-40e1-8eac-5d62113f9725")
 	)
 	(junction
+		(at 398.78 251.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e31aa8d-5b64-4330-89a5-bc12ff26ab0a")
+	)
+	(junction
 		(at 586.74 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30e046a7-b9b8-4d6c-9b8d-6d850a1fe3a5")
 	)
 	(junction
-		(at 553.72 55.88)
+		(at 607.06 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "354a7c3c-3deb-428a-8adb-e9b772257138")
+		(uuid "31f5f6ad-21a1-457e-9bd7-c6bd54681589")
 	)
 	(junction
 		(at 149.86 55.88)
@@ -12050,10 +12446,10 @@
 		(uuid "35fa1db8-0ff8-4f7f-bda5-21ae495aabbd")
 	)
 	(junction
-		(at 574.04 55.88)
+		(at 375.92 264.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3692c053-8439-425d-8b1a-2db1dd896d93")
+		(uuid "365c9780-4b62-4d7b-84a3-ed7576290c45")
 	)
 	(junction
 		(at 187.96 403.86)
@@ -12086,12 +12482,6 @@
 		(uuid "3e351df4-9c15-4ac6-8992-3a6906d501da")
 	)
 	(junction
-		(at 574.04 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e383b7f-fbba-42eb-82d7-a2919887a4e0")
-	)
-	(junction
 		(at 594.36 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12102,6 +12492,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "414cf3fb-2e6d-4a05-9604-7ab7012125a9")
+	)
+	(junction
+		(at 568.96 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42bcefaa-36a5-4233-bc8e-6938026ba985")
 	)
 	(junction
 		(at 96.52 284.48)
@@ -12120,6 +12516,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "475f7fb2-874d-47c3-a465-a47fd62f74db")
+	)
+	(junction
+		(at 607.06 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48db4249-844c-4570-ac8b-2e13a6de9c1d")
 	)
 	(junction
 		(at 124.46 195.58)
@@ -12152,16 +12554,40 @@
 		(uuid "4e9039de-04a9-4568-8f3f-7036aa93b87d")
 	)
 	(junction
+		(at 614.68 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fad4ea6-429e-4a3d-abbd-4802dda49d2b")
+	)
+	(junction
+		(at 561.34 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50d99a4d-04ae-4bde-a27d-3f09675d9c26")
+	)
+	(junction
 		(at 416.56 430.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59668339-4eb4-4329-a092-c40ba9062150")
 	)
 	(junction
+		(at 594.36 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c7ecb69-ccda-4b34-9c0e-f1a5fb9b9826")
+	)
+	(junction
 		(at 52.07 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5de3f339-d583-4b35-ba31-1d794dbaf150")
+	)
+	(junction
+		(at 391.16 243.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ed3d1a5-cc16-401e-b7b1-11d558438e6a")
 	)
 	(junction
 		(at 53.34 284.48)
@@ -12200,6 +12626,12 @@
 		(uuid "6cc96df4-8c28-45c3-a597-703965743d12")
 	)
 	(junction
+		(at 591.82 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ccb3939-6648-4831-9f57-70f9eb36bcc5")
+	)
+	(junction
 		(at 416.56 440.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12224,6 +12656,12 @@
 		(uuid "6fc185df-d53b-4748-b501-883e3a674cfa")
 	)
 	(junction
+		(at 599.44 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "703374a5-d2da-407b-a0c9-cbc1a70045ea")
+	)
+	(junction
 		(at 386.08 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12234,6 +12672,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72666ace-b2b7-4188-80c2-1d3d4dd1e0e9")
+	)
+	(junction
+		(at 568.96 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7442a279-a34a-4c0a-b58e-7595cb1ff08d")
+	)
+	(junction
+		(at 584.2 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74e6ac1d-56c4-447c-a1fb-5f1038615e42")
 	)
 	(junction
 		(at 71.12 71.12)
@@ -12252,6 +12702,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d028cbf-ba39-48d6-ae3e-e56b27454c4b")
+	)
+	(junction
+		(at 629.92 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7dce725f-9d97-439c-9947-4a2176dc4f5c")
 	)
 	(junction
 		(at 497.84 106.68)
@@ -12284,6 +12740,24 @@
 		(uuid "837ed98d-fa74-48d1-92c6-dbdb452283d6")
 	)
 	(junction
+		(at 645.16 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83cf0680-1551-4c22-a05e-736000dfee72")
+	)
+	(junction
+		(at 622.3 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84ef13fb-a1cc-4ab2-8dca-91dbea620091")
+	)
+	(junction
+		(at 576.58 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8931c221-a0a2-42e3-bfc1-71322061a90b")
+	)
+	(junction
 		(at 80.01 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12294,6 +12768,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c335d11-faf8-4d91-a199-970e2d4f15d0")
+	)
+	(junction
+		(at 599.44 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f5c5e8e-583f-4c16-bacd-a085fc5dd4fd")
 	)
 	(junction
 		(at 243.84 312.42)
@@ -12314,22 +12794,28 @@
 		(uuid "957c4234-dd96-40d6-b996-3118677c5266")
 	)
 	(junction
+		(at 553.72 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95d2a84a-b36e-4832-9f41-313d12f100fc")
+	)
+	(junction
 		(at 30.48 236.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9650930f-b737-4455-a556-066e22e6e2ca")
 	)
 	(junction
+		(at 622.3 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96b0c577-d627-44e7-ad32-ba5c799aec7a")
+	)
+	(junction
 		(at 165.1 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "97de1260-c623-45a1-bf64-c217b41dc0ab")
-	)
-	(junction
-		(at 375.92 264.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97e33db0-ebb9-4a44-80da-8465aa2f2a8d")
 	)
 	(junction
 		(at 240.03 254)
@@ -12380,12 +12866,6 @@
 		(uuid "9d8090fb-665b-484f-9406-dd57615827d5")
 	)
 	(junction
-		(at 594.36 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e64a359-16b0-4fb1-b816-b790ac98b8e0")
-	)
-	(junction
 		(at 386.08 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12428,22 +12908,40 @@
 		(uuid "a622e72c-d950-4459-92cc-49b04284837a")
 	)
 	(junction
+		(at 414.02 243.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6258bcb-513e-49dc-8774-247d888fe952")
+	)
+	(junction
+		(at 645.16 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a79bd928-0cc2-4eec-bdeb-962a2aa27a83")
+	)
+	(junction
 		(at 370.84 307.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a818351a-6305-4181-aedf-d86a9f74d36a")
 	)
 	(junction
+		(at 629.92 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a90f0e83-038c-4510-afdc-195295cc07f5")
+	)
+	(junction
+		(at 599.44 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abbe4865-6c25-4fff-8955-b58b8af3c050")
+	)
+	(junction
 		(at 396.24 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af199bf9-9271-480c-9cf4-9b23d4cb7e7d")
-	)
-	(junction
-		(at 594.36 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b059d92f-6d49-4455-a2eb-c52e450b539a")
 	)
 	(junction
 		(at 96.52 332.74)
@@ -12462,6 +12960,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b54447a5-68fc-43db-8dff-8e82a32454e0")
+	)
+	(junction
+		(at 637.54 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b60d3560-9fb0-4549-9a3c-0507ad06d212")
 	)
 	(junction
 		(at 336.55 200.66)
@@ -12488,10 +12992,22 @@
 		(uuid "bcb29012-10d1-4366-9e41-69cc7ffcfb3b")
 	)
 	(junction
+		(at 576.58 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be4fe1d3-4edb-4e1e-aee9-996ebc8be218")
+	)
+	(junction
 		(at 412.75 440.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c4cc4096-c2d2-4b98-a25e-8cfb4223ab8f")
+	)
+	(junction
+		(at 614.68 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9b18fd3-dcce-4f95-9049-f24d0e6f1fce")
 	)
 	(junction
 		(at 541.02 55.88)
@@ -12530,10 +13046,28 @@
 		(uuid "d42ed6d1-a95f-4482-bba9-b8e3305753c1")
 	)
 	(junction
+		(at 568.96 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d547245a-7506-4d25-87ac-342315e7824f")
+	)
+	(junction
 		(at 665.48 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5a75653-3e39-448e-86b5-52e4f528bfe2")
+	)
+	(junction
+		(at 561.34 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d97c9dbf-3009-4631-8127-390253a63956")
+	)
+	(junction
+		(at 637.54 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "daa7bde6-5f34-45f9-a182-30f0073a3a94")
 	)
 	(junction
 		(at 142.24 223.52)
@@ -12566,6 +13100,18 @@
 		(uuid "e24707cb-2ce3-4f6f-89a1-3c217bee28a1")
 	)
 	(junction
+		(at 629.92 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e269438b-9a67-4957-926b-edaa67f69de0")
+	)
+	(junction
+		(at 576.58 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e53348e0-2b9f-41d6-a252-e8ecb2bbcbca")
+	)
+	(junction
 		(at 142.24 320.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12576,6 +13122,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5df5726-ef49-47a8-8778-e5b7efd583ad")
+	)
+	(junction
+		(at 607.06 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7333d54-3b8d-405f-b4cf-0d5dd770f285")
 	)
 	(junction
 		(at 528.32 109.22)
@@ -12624,6 +13176,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f062a87a-4e4b-47d3-8da3-b4426ca69668")
+	)
+	(junction
+		(at 614.68 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1b5f386-075f-4c02-ba5b-fca29e748965")
 	)
 	(junction
 		(at 83.82 68.58)
@@ -12773,16 +13331,6 @@
 	)
 	(wire
 		(pts
-			(xy 574.04 63.5) (xy 574.04 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0204c045-8573-45ef-987d-ad1034910144")
-	)
-	(wire
-		(pts
 			(xy 604.52 120.65) (xy 604.52 121.92)
 		)
 		(stroke
@@ -12860,6 +13408,16 @@
 			(type default)
 		)
 		(uuid "08001744-ed8e-40f1-ba50-4e41b0a3f300")
+	)
+	(wire
+		(pts
+			(xy 614.68 55.88) (xy 629.92 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "085e6648-7558-4de0-a9d4-03ba6a299bf2")
 	)
 	(wire
 		(pts
@@ -12973,13 +13531,13 @@
 	)
 	(wire
 		(pts
-			(xy 426.72 261.62) (xy 424.18 261.62)
+			(xy 576.58 68.58) (xy 591.82 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0f276943-e2cb-4b5c-b45e-a8d1c7b68cc4")
+		(uuid "0ef6d9c3-3aca-4946-a068-022834efe4b9")
 	)
 	(wire
 		(pts
@@ -13023,13 +13581,13 @@
 	)
 	(wire
 		(pts
-			(xy 419.1 259.08) (xy 426.72 259.08)
+			(xy 645.16 60.96) (xy 645.16 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "12b1c155-691e-4706-af74-9859393620f3")
+		(uuid "12da9b7f-5d6c-423c-b0d6-8caa8dc90c19")
 	)
 	(wire
 		(pts
@@ -13063,6 +13621,16 @@
 	)
 	(wire
 		(pts
+			(xy 622.3 60.96) (xy 622.3 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15a558e3-06ab-40ab-ab88-e31021c30c72")
+	)
+	(wire
+		(pts
 			(xy 121.92 320.04) (xy 132.08 320.04)
 		)
 		(stroke
@@ -13073,6 +13641,16 @@
 	)
 	(wire
 		(pts
+			(xy 568.96 60.96) (xy 568.96 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17d5e808-a3c3-49a8-a149-8f72b8df17ea")
+	)
+	(wire
+		(pts
 			(xy 615.95 86.36) (xy 621.03 86.36)
 		)
 		(stroke
@@ -13080,6 +13658,16 @@
 			(type default)
 		)
 		(uuid "19225257-74b9-4127-aa24-c30ffd3dea96")
+	)
+	(wire
+		(pts
+			(xy 403.86 243.84) (xy 414.02 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19ea0d6a-23f0-419d-891a-ee464786622d")
 	)
 	(wire
 		(pts
@@ -13143,6 +13731,16 @@
 	)
 	(wire
 		(pts
+			(xy 637.54 60.96) (xy 637.54 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bb0d25c-3d68-48bd-a87e-ef362be3e4d8")
+	)
+	(wire
+		(pts
 			(xy 349.25 274.32) (xy 331.47 274.32)
 		)
 		(stroke
@@ -13170,6 +13768,16 @@
 			(type default)
 		)
 		(uuid "1d2b595a-fa5a-4192-b532-c39025c3a862")
+	)
+	(wire
+		(pts
+			(xy 414.02 243.84) (xy 431.8 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d3dbe5d-99f0-4bc6-abdc-3ff9f4d9311a")
 	)
 	(wire
 		(pts
@@ -13240,6 +13848,16 @@
 			(type default)
 		)
 		(uuid "1f9309cd-2017-4e6d-9667-d534b8dd01a3")
+	)
+	(wire
+		(pts
+			(xy 607.06 66.04) (xy 607.06 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20ba188b-1517-4d4a-a0cf-bcde82108ad9")
 	)
 	(wire
 		(pts
@@ -13343,6 +13961,16 @@
 	)
 	(wire
 		(pts
+			(xy 584.2 55.88) (xy 599.44 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26a2ddf0-a6a1-4c87-8988-35b0001a177f")
+	)
+	(wire
+		(pts
 			(xy 416.56 440.69) (xy 430.53 440.69)
 		)
 		(stroke
@@ -13390,6 +14018,16 @@
 			(type default)
 		)
 		(uuid "291837cb-35b4-4cd1-9808-7d97c6b8e55e")
+	)
+	(wire
+		(pts
+			(xy 607.06 60.96) (xy 607.06 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c319ca-a965-407d-b60d-c9697c701726")
 	)
 	(wire
 		(pts
@@ -13633,16 +14271,6 @@
 	)
 	(wire
 		(pts
-			(xy 551.18 59.69) (xy 551.18 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33bb9095-fda0-4566-87c7-c550a9c9af56")
-	)
-	(wire
-		(pts
 			(xy 27.94 284.48) (xy 30.48 284.48)
 		)
 		(stroke
@@ -13683,16 +14311,6 @@
 	)
 	(wire
 		(pts
-			(xy 571.5 59.69) (xy 571.5 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "370b3143-e3c6-4627-ac65-48784ab77443")
-	)
-	(wire
-		(pts
 			(xy 331.47 302.26) (xy 351.79 302.26)
 		)
 		(stroke
@@ -13730,16 +14348,6 @@
 			(type default)
 		)
 		(uuid "37f7f634-d4ab-4075-a233-348a3df5fb7c")
-	)
-	(wire
-		(pts
-			(xy 401.32 279.4) (xy 411.48 279.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "381749e6-923b-44d1-a8db-5e516b9095a4")
 	)
 	(wire
 		(pts
@@ -13833,6 +14441,16 @@
 	)
 	(wire
 		(pts
+			(xy 637.54 66.04) (xy 637.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bd09514-76ae-4fc6-ae91-e09371988df3")
+	)
+	(wire
+		(pts
 			(xy 436.88 109.22) (xy 401.32 109.22)
 		)
 		(stroke
@@ -13840,6 +14458,16 @@
 			(type default)
 		)
 		(uuid "3bfbe2a4-2152-4ba7-94f5-361d908274de")
+	)
+	(wire
+		(pts
+			(xy 553.72 55.88) (xy 553.72 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c211f2c-7acb-4ba2-b78e-7d3c14badf2f")
 	)
 	(wire
 		(pts
@@ -13943,6 +14571,16 @@
 	)
 	(wire
 		(pts
+			(xy 375.92 264.16) (xy 391.16 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "408bee79-1e29-4b58-adc7-f446f9d62f5d")
+	)
+	(wire
+		(pts
 			(xy 416.56 439.42) (xy 416.56 440.69)
 		)
 		(stroke
@@ -13960,6 +14598,26 @@
 			(type default)
 		)
 		(uuid "4136ac27-bd7e-427f-89af-305894c9d051")
+	)
+	(wire
+		(pts
+			(xy 584.2 60.96) (xy 584.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41aa7671-6f8c-491c-96b8-066b944ad82d")
+	)
+	(wire
+		(pts
+			(xy 614.68 55.88) (xy 614.68 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4377fc74-6fef-4293-9d49-dc6ea477a378")
 	)
 	(wire
 		(pts
@@ -14020,16 +14678,6 @@
 			(type default)
 		)
 		(uuid "46c81cf9-b90e-4406-928d-7d890ccda213")
-	)
-	(wire
-		(pts
-			(xy 393.7 254) (xy 426.72 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46cc5ebe-3453-457f-9ecb-07cda9fad2cf")
 	)
 	(wire
 		(pts
@@ -14113,6 +14761,26 @@
 	)
 	(wire
 		(pts
+			(xy 599.44 55.88) (xy 614.68 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48c31622-c62d-4cf3-91fd-cee1f3929b89")
+	)
+	(wire
+		(pts
+			(xy 406.4 279.4) (xy 426.72 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48caceca-cee9-44cd-865b-ba1c9789ae6a")
+	)
+	(wire
+		(pts
 			(xy 91.44 238.76) (xy 99.06 238.76)
 		)
 		(stroke
@@ -14160,6 +14828,16 @@
 			(type default)
 		)
 		(uuid "4ceaad59-4cfb-461b-bcd8-6e09809a81e9")
+	)
+	(wire
+		(pts
+			(xy 568.96 55.88) (xy 584.2 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d5ac9c2-ab74-4388-8f29-9f19dc539017")
 	)
 	(wire
 		(pts
@@ -14213,6 +14891,16 @@
 	)
 	(wire
 		(pts
+			(xy 591.82 60.96) (xy 591.82 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f2562d0-c20d-4838-8197-c5ea32699458")
+	)
+	(wire
+		(pts
 			(xy 52.07 83.82) (xy 58.42 83.82)
 		)
 		(stroke
@@ -14230,16 +14918,6 @@
 			(type default)
 		)
 		(uuid "4fb6fd31-78fc-4858-8120-3f69bef4177f")
-	)
-	(wire
-		(pts
-			(xy 553.72 63.5) (xy 553.72 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5028fe60-003a-4d83-934e-3cab3760d54f")
 	)
 	(wire
 		(pts
@@ -14323,6 +15001,16 @@
 	)
 	(wire
 		(pts
+			(xy 591.82 68.58) (xy 594.36 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52d4af1f-57f7-47d8-89fe-75c03b1fea7b")
+	)
+	(wire
+		(pts
 			(xy 66.04 271.78) (xy 68.58 271.78)
 		)
 		(stroke
@@ -14340,6 +15028,16 @@
 			(type default)
 		)
 		(uuid "53aa3231-017a-42c1-af23-745e97cfa391")
+	)
+	(wire
+		(pts
+			(xy 561.34 60.96) (xy 561.34 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53d67563-3c47-40fc-8566-b40eaf02fec7")
 	)
 	(wire
 		(pts
@@ -14363,13 +15061,13 @@
 	)
 	(wire
 		(pts
-			(xy 574.04 68.58) (xy 594.36 68.58)
+			(xy 614.68 60.96) (xy 614.68 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54fd2057-0224-4211-971f-600174508bbd")
+		(uuid "55c9a6bb-02d3-4295-b250-84bb7e9e1411")
 	)
 	(wire
 		(pts
@@ -14380,6 +15078,16 @@
 			(type default)
 		)
 		(uuid "561552ee-dd30-4b46-a9bc-a8c95f96bbcd")
+	)
+	(wire
+		(pts
+			(xy 622.3 66.04) (xy 622.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56a02429-4c13-4130-9b66-3e145fc98201")
 	)
 	(wire
 		(pts
@@ -14430,16 +15138,6 @@
 			(type default)
 		)
 		(uuid "58d97723-7f41-457f-919a-e0fd39c86f01")
-	)
-	(wire
-		(pts
-			(xy 553.72 68.58) (xy 574.04 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59219362-40ec-44ce-9169-0242bfb1a360")
 	)
 	(wire
 		(pts
@@ -14563,6 +15261,16 @@
 	)
 	(wire
 		(pts
+			(xy 622.3 68.58) (xy 637.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fa5db19-1961-46a4-82b0-3b239db68875")
+	)
+	(wire
+		(pts
 			(xy 81.28 124.46) (xy 52.07 124.46)
 		)
 		(stroke
@@ -14643,13 +15351,13 @@
 	)
 	(wire
 		(pts
-			(xy 594.36 55.88) (xy 665.48 55.88)
+			(xy 591.82 66.04) (xy 591.82 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "646e5755-40e5-4fc8-9ac6-b82a0c587cb2")
+		(uuid "6490f401-cd6c-4c84-a44c-dff07cbf811d")
 	)
 	(wire
 		(pts
@@ -14793,6 +15501,16 @@
 	)
 	(wire
 		(pts
+			(xy 561.34 68.58) (xy 576.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6deccedc-620c-456f-9feb-f56bc349a232")
+	)
+	(wire
+		(pts
 			(xy 127 58.42) (xy 127 63.5)
 		)
 		(stroke
@@ -14840,6 +15558,36 @@
 			(type default)
 		)
 		(uuid "70f388dd-54c5-4a6b-9ded-25c5d8017e32")
+	)
+	(wire
+		(pts
+			(xy 426.72 279.4) (xy 426.72 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71109af9-0875-473a-a8e8-4089bfbfb42b")
+	)
+	(wire
+		(pts
+			(xy 391.16 243.84) (xy 393.7 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7197bee5-9b9a-4da4-a2e7-18099f17c3f9")
+	)
+	(wire
+		(pts
+			(xy 594.36 68.58) (xy 607.06 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71c2c0df-273a-4f71-b890-9fbc3b74d446")
 	)
 	(wire
 		(pts
@@ -14953,16 +15701,6 @@
 	)
 	(wire
 		(pts
-			(xy 594.36 63.5) (xy 594.36 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78973045-505b-4eec-aa8d-22f01994fc12")
-	)
-	(wire
-		(pts
 			(xy 452.12 66.04) (xy 452.12 76.2)
 		)
 		(stroke
@@ -15030,6 +15768,26 @@
 			(type default)
 		)
 		(uuid "7d8b7821-f70b-4f71-ae5b-c84d9eff89b6")
+	)
+	(wire
+		(pts
+			(xy 426.72 246.38) (xy 431.8 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7db03850-558a-426d-9b18-55078b387205")
+	)
+	(wire
+		(pts
+			(xy 561.34 66.04) (xy 561.34 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dc58cfa-aa7a-4523-a0ec-f7a47c5291f0")
 	)
 	(wire
 		(pts
@@ -15160,16 +15918,6 @@
 			(type default)
 		)
 		(uuid "87f7fbdb-464f-4645-b3f9-4463fea0be54")
-	)
-	(wire
-		(pts
-			(xy 424.18 261.62) (xy 424.18 264.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "883260ea-32ae-4985-97a5-09ac5eaf69d8")
 	)
 	(wire
 		(pts
@@ -15373,16 +16121,6 @@
 	)
 	(wire
 		(pts
-			(xy 541.02 55.88) (xy 553.72 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "948b0c66-469d-4845-8ee9-d20e86bfed79")
-	)
-	(wire
-		(pts
 			(xy 469.9 55.88) (xy 480.06 55.88)
 		)
 		(stroke
@@ -15393,13 +16131,13 @@
 	)
 	(wire
 		(pts
-			(xy 419.1 280.67) (xy 419.1 259.08)
+			(xy 576.58 60.96) (xy 576.58 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96b4762f-47c1-4331-96d7-7167e6f66dc5")
+		(uuid "9642aa83-88df-4f9e-a193-e4181c619ef6")
 	)
 	(wire
 		(pts
@@ -15460,6 +16198,26 @@
 			(type default)
 		)
 		(uuid "989ca443-dd58-464a-9c32-dc13d2a34d11")
+	)
+	(wire
+		(pts
+			(xy 599.44 60.96) (xy 599.44 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98cd1fb9-0efa-4052-8997-5b2771f553c3")
+	)
+	(wire
+		(pts
+			(xy 584.2 55.88) (xy 584.2 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9976589e-69fc-4a88-804f-d375c6b00225")
 	)
 	(wire
 		(pts
@@ -15623,16 +16381,6 @@
 	)
 	(wire
 		(pts
-			(xy 411.48 256.54) (xy 426.72 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3e07d08-a958-4afc-9cae-8c98673448fe")
-	)
-	(wire
-		(pts
 			(xy 370.84 152.4) (xy 378.46 152.4)
 		)
 		(stroke
@@ -15660,16 +16408,6 @@
 			(type default)
 		)
 		(uuid "a4e6b849-56da-4cb9-a7a3-9942651bc563")
-	)
-	(wire
-		(pts
-			(xy 375.92 264.16) (xy 386.08 264.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5e5a1e2-c7f9-44d3-91a6-810941877b41")
 	)
 	(wire
 		(pts
@@ -15710,6 +16448,16 @@
 			(type default)
 		)
 		(uuid "a7c56e61-bbf5-4f85-b8ee-306cfbc02c62")
+	)
+	(wire
+		(pts
+			(xy 553.72 60.96) (xy 553.72 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9bc3869-0787-47d2-ae9d-b8fbfd9a67d7")
 	)
 	(wire
 		(pts
@@ -15773,6 +16521,16 @@
 	)
 	(wire
 		(pts
+			(xy 645.16 55.88) (xy 665.48 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab79d4b4-e2c4-403d-bc72-b8f3e5f826e0")
+	)
+	(wire
+		(pts
 			(xy 497.84 106.68) (xy 505.46 106.68)
 		)
 		(stroke
@@ -15830,6 +16588,16 @@
 			(type default)
 		)
 		(uuid "ae676405-f719-4c24-9651-b01239893595")
+	)
+	(wire
+		(pts
+			(xy 383.54 243.84) (xy 391.16 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae790ab0-86f9-4e68-8f9d-ad030a7a7b7e")
 	)
 	(wire
 		(pts
@@ -15933,6 +16701,16 @@
 	)
 	(wire
 		(pts
+			(xy 568.96 55.88) (xy 568.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b46d2b94-77e5-4552-a932-a08cba445b2d")
+	)
+	(wire
+		(pts
 			(xy 105.41 172.72) (xy 127 172.72)
 		)
 		(stroke
@@ -16033,6 +16811,16 @@
 	)
 	(wire
 		(pts
+			(xy 629.92 55.88) (xy 645.16 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b84c2a52-1003-4744-8123-69b12419d5a0")
+	)
+	(wire
+		(pts
 			(xy 396.24 55.88) (xy 406.4 55.88)
 		)
 		(stroke
@@ -16103,6 +16891,16 @@
 	)
 	(wire
 		(pts
+			(xy 607.06 68.58) (xy 622.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc5c2212-ba81-4c94-ae60-60ecc74b1e57")
+	)
+	(wire
+		(pts
 			(xy 454.66 104.14) (xy 454.66 109.22)
 		)
 		(stroke
@@ -16150,16 +16948,6 @@
 			(type default)
 		)
 		(uuid "bf29824b-0524-4d56-81b1-8682f584539f")
-	)
-	(wire
-		(pts
-			(xy 591.82 59.69) (xy 591.82 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf838500-6e5b-4d84-b4c8-51397b395b8f")
 	)
 	(wire
 		(pts
@@ -16223,6 +17011,16 @@
 	)
 	(wire
 		(pts
+			(xy 576.58 66.04) (xy 576.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1f4f350-686b-4cae-8f2f-f9bde938488a")
+	)
+	(wire
+		(pts
 			(xy 109.22 271.78) (xy 121.92 271.78)
 		)
 		(stroke
@@ -16250,6 +17048,16 @@
 			(type default)
 		)
 		(uuid "c27c8123-b247-42c3-8fcc-21fc8ccb7e72")
+	)
+	(wire
+		(pts
+			(xy 645.16 55.88) (xy 645.16 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a9de2c-c740-43d0-9b66-1651a8de6b5c")
 	)
 	(wire
 		(pts
@@ -16333,6 +17141,16 @@
 	)
 	(wire
 		(pts
+			(xy 629.92 60.96) (xy 629.92 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8589969-a947-4724-aebe-49a31be65ef5")
+	)
+	(wire
+		(pts
 			(xy 27.94 236.22) (xy 30.48 236.22)
 		)
 		(stroke
@@ -16340,16 +17158,6 @@
 			(type default)
 		)
 		(uuid "c958c6b8-2451-4c2a-a6ed-74c540740a56")
-	)
-	(wire
-		(pts
-			(xy 391.16 279.4) (xy 401.32 279.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9987e9b-91b5-4da1-b2b2-ee25f3b0b942")
 	)
 	(wire
 		(pts
@@ -16483,16 +17291,6 @@
 	)
 	(wire
 		(pts
-			(xy 411.48 279.4) (xy 411.48 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d046d156-b730-4fe9-9b69-7e368529c22d")
-	)
-	(wire
-		(pts
 			(xy 336.55 502.92) (xy 336.55 326.39)
 		)
 		(stroke
@@ -16553,6 +17351,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 251.46) (xy 398.78 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d43048a0-1740-4cba-9df9-ccc114579840")
+	)
+	(wire
+		(pts
 			(xy 331.47 355.6) (xy 334.01 355.6)
 		)
 		(stroke
@@ -16590,16 +17398,6 @@
 			(type default)
 		)
 		(uuid "d558b798-bc17-47c3-b44e-1e637dc7d698")
-	)
-	(wire
-		(pts
-			(xy 393.7 259.08) (xy 393.7 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5675601-45e4-4bff-bc26-a46daf9927b3")
 	)
 	(wire
 		(pts
@@ -16750,6 +17548,16 @@
 			(type default)
 		)
 		(uuid "daa4334e-67e3-4d3e-a79e-4af8897bd8ee")
+	)
+	(wire
+		(pts
+			(xy 629.92 55.88) (xy 629.92 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbf4c2ba-2bfc-4ffd-bb09-7714d8bc31d0")
 	)
 	(wire
 		(pts
@@ -16943,6 +17751,16 @@
 	)
 	(wire
 		(pts
+			(xy 541.02 55.88) (xy 553.72 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6a4460f-cb4c-48fc-b53a-711ad9313dbe")
+	)
+	(wire
+		(pts
 			(xy 421.64 66.04) (xy 441.96 66.04)
 		)
 		(stroke
@@ -16980,6 +17798,16 @@
 			(type default)
 		)
 		(uuid "e899f1cc-5bd2-44cf-866b-645218866867")
+	)
+	(wire
+		(pts
+			(xy 553.72 55.88) (xy 568.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8e1f965-b404-42de-9fbc-21d44d28fc40")
 	)
 	(wire
 		(pts
@@ -17133,13 +17961,13 @@
 	)
 	(wire
 		(pts
-			(xy 574.04 55.88) (xy 594.36 55.88)
+			(xy 391.16 279.4) (xy 406.4 279.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ef86f448-e973-4c61-ba57-19a884190ee1")
+		(uuid "ef3b4019-3a21-4d00-a1b1-63fad888083f")
 	)
 	(wire
 		(pts
@@ -17233,6 +18061,16 @@
 	)
 	(wire
 		(pts
+			(xy 599.44 55.88) (xy 599.44 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3c79948-aded-4c64-bb96-ab184a83effb")
+	)
+	(wire
+		(pts
 			(xy 375.92 55.88) (xy 386.08 55.88)
 		)
 		(stroke
@@ -17320,16 +18158,6 @@
 			(type default)
 		)
 		(uuid "f8d68a0c-6192-404f-8344-fc8c80a08f8b")
-	)
-	(wire
-		(pts
-			(xy 553.72 55.88) (xy 574.04 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f97d9405-130e-43ee-8b0a-ee03d555e016")
 	)
 	(wire
 		(pts
@@ -17775,9 +18603,9 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+12V"
 		(shape bidirectional)
-		(at 424.18 284.48 0)
+		(at 388.62 240.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17786,7 +18614,7 @@
 		)
 		(uuid "6f9bfdb9-89f9-42b5-b32e-b7c506adec95")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 424.18 284.48 0)
+			(at 388.62 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17799,7 +18627,7 @@
 	)
 	(global_label "+3V3_SYS"
 		(shape bidirectional)
-		(at 401.32 271.78 90)
+		(at 406.4 271.78 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17808,7 +18636,7 @@
 		)
 		(uuid "70ac0b8d-b750-4552-99ae-47a8bf378c63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.32 271.78 0)
+			(at 406.4 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18083,9 +18911,9 @@
 			)
 		)
 	)
-	(global_label "+12V"
+	(global_label "+5V"
 		(shape bidirectional)
-		(at 414.02 284.48 180)
+		(at 378.46 240.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18094,7 +18922,7 @@
 		)
 		(uuid "cf391c51-f55a-4190-86d6-5bb1b85c0e4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 414.02 284.48 0)
+			(at 378.46 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19252,6 +20080,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 572.77 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09419bdc-e465-446d-95c5-453b4630066f")
+		(property "Reference" "R535"
+			(at 572.77 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 572.77 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 572.77 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 572.77 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 572.77 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 572.77 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 572.77 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 572.77 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9921620-610c-48f0-899c-73466121dca2")
+		)
+		(pin "2"
+			(uuid "ead19a82-2c2e-4809-85ee-33ea2ed69717")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R535")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 96.52 323.85 270)
 		(unit 1)
@@ -19489,7 +20430,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 401.32 275.59 0)
+		(at 406.4 275.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19499,7 +20440,7 @@
 		(dnp no)
 		(uuid "0d203f7b-d93f-4fc4-a082-523957d7eb50")
 		(property "Reference" "R28"
-			(at 403.86 274.32 0)
+			(at 408.94 274.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19510,7 +20451,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 403.86 276.86 0)
+			(at 408.94 276.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19521,7 +20462,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 399.54 275.59 90)
+			(at 404.62 275.59 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19532,7 +20473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 401.32 275.59 0)
+			(at 406.4 275.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19543,7 +20484,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 401.32 275.59 0)
+			(at 406.4 275.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19717,6 +20658,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "#PWR0022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 633.73 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ec7ac03-4aa5-48c2-b8f9-93978f57cdc7")
+		(property "Reference" "R543"
+			(at 633.73 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 633.73 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 633.73 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 633.73 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 633.73 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 633.73 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 633.73 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 633.73 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84146836-5e31-430d-bb31-baadeff1d345")
+		)
+		(pin "2"
+			(uuid "d36ef4de-d85a-42b4-b8b6-b56b13c5eeaf")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R543")
 					(unit 1)
 				)
 			)
@@ -19956,94 +21010,6 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 431.8 259.08 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1451ee76-c00d-4f2c-9f2d-9d5945464f37")
-		(property "Reference" "J6"
-			(at 435.61 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FAN GH4"
-			(at 435.61 257.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal"
-			(at 431.8 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 431.8 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 431.8 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "94f49c55-6fe6-4c6d-8993-26d07d5d5ca3")
-		)
-		(pin "2"
-			(uuid "a4b8bf77-dbe1-4042-b91f-2fb454ce2f69")
-		)
-		(pin "3"
-			(uuid "66825d0c-ca5a-4aa7-b5dc-ac8a9932ca1a")
-		)
-		(pin "4"
-			(uuid "d8d561cf-1f6e-49ff-a1dc-2d7fa0e01cdc")
-		)
-		(instances
-			(project "ossm-flagship"
-				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -21074,6 +22040,119 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 595.63 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1d233851-f75f-4252-919f-8e89d119aac8")
+		(property "Reference" "R526"
+			(at 595.63 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 595.63 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 595.63 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 595.63 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 595.63 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 595.63 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 595.63 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 595.63 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1fcb633-ab71-4647-b046-a279c14a0a19")
+		)
+		(pin "2"
+			(uuid "19c34cbb-aca3-46a6-a0a3-33bc20cb772a")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R526")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 665.48 59.69 0)
 		(unit 1)
 		(body_style 1)
@@ -21508,6 +22587,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 595.63 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1fc621ac-3994-4a3a-a4d2-4b79b7eb2d2d")
+		(property "Reference" "R538"
+			(at 595.63 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 595.63 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 595.63 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 595.63 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 595.63 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 595.63 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 595.63 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 595.63 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0e48cd9-6547-4e98-acb1-b91a19c9a4ce")
+		)
+		(pin "2"
+			(uuid "d0df0053-fb56-4d38-a70c-ef2f980bd9d3")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R538")
 					(unit 1)
 				)
 			)
@@ -22185,6 +23377,203 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 610.87 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25fde370-56f5-49a6-9400-166b7d96937c")
+		(property "Reference" "R540"
+			(at 610.87 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 610.87 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 610.87 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 610.87 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 610.87 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 610.87 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 610.87 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 610.87 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31dceb34-e78a-4345-9536-bfec74396421")
+		)
+		(pin "2"
+			(uuid "904c0a65-2511-470e-90bf-df7aad66417f")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R540")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 398.78 255.27 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2624ef1e-536b-40c7-bf4a-46bdb97c457b")
+		(property "Reference" "R703"
+			(at 396.24 254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470R"
+			(at 396.24 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 398.78 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 398.78 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 398.78 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "d6bd0161-92d4-412e-af56-fb968ef60834")
+		)
+		(pin "2"
+			(uuid "4c22a2b8-040f-4f6b-9119-b088907baf0d")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 370.84 148.59 0)
 		(unit 1)
 		(body_style 1)
@@ -22339,6 +23728,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "#PWR0025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 565.15 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "27af2816-83d2-4a14-82d7-d872600e6926")
+		(property "Reference" "R522"
+			(at 565.15 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 565.15 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 565.15 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 565.15 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 565.15 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 565.15 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 565.15 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 565.15 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45d06939-5f3f-4c3d-95a9-22cca572a1ef")
+		)
+		(pin "2"
+			(uuid "4d222948-c52d-486b-92a6-37b0da9b0b04")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R522")
 					(unit 1)
 				)
 			)
@@ -22592,6 +24094,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 557.53 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b6bd325-afa8-4661-b193-230dbe47f08f")
+		(property "Reference" "R521"
+			(at 557.53 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 557.53 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 557.53 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 557.53 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 557.53 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 557.53 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 557.53 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 557.53 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b10f7a26-b924-452e-a655-a478d38cc291")
+		)
+		(pin "2"
+			(uuid "5439d0a3-091e-4313-b3fc-2837dd76f309")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R521")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 502.92 55.88 0)
 		(unit 1)
@@ -22674,7 +24289,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 391.16 264.16 0)
+		(at 396.24 264.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22684,7 +24299,7 @@
 		(dnp no)
 		(uuid "2cc2a1e7-aed7-4750-b669-2724a58feb0e")
 		(property "Reference" "Q701"
-			(at 384.81 259.08 0)
+			(at 389.89 259.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22695,7 +24310,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 384.81 261.62 0)
+			(at 389.89 261.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22706,7 +24321,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 396.24 262.26 0)
+			(at 401.32 262.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22719,7 +24334,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 396.24 260.35 0)
+			(at 401.32 260.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22731,7 +24346,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 391.16 264.16 0)
+			(at 396.24 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23760,6 +25375,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 565.15 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "37e22d62-69e3-409a-b5cb-a45e954f5d54")
+		(property "Reference" "R534"
+			(at 565.15 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 565.15 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 565.15 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 565.15 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 565.15 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 565.15 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 565.15 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 565.15 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e573fc7e-6f47-4c4a-8d7d-e62ff65c4d36")
+		)
+		(pin "2"
+			(uuid "a7f416cf-bdaf-40fe-bf2e-3651a3c4a8f3")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R534")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 121.92 327.66 0)
 		(unit 1)
@@ -23908,6 +25636,106 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "#PWR0088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3401A")
+		(at 398.78 246.38 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39cf64e7-aaa0-45e0-b975-a78c64ba96a5")
+		(property "Reference" "Q702"
+			(at 402.59 247.65 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401A"
+			(at 402.59 250.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 398.78 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 398.78 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 398.78 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part" "C15127"
+			(at 398.78 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "9459bbbd-be34-4423-8053-715e9035e569")
+		)
+		(pin "2"
+			(uuid "5748c83c-17de-42c7-8fd9-b6a472e18ecf")
+		)
+		(pin "3"
+			(uuid "990be142-a999-4573-bdca-5a12a8e10e9e")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "Q702")
 					(unit 1)
 				)
 			)
@@ -24389,6 +26217,119 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 641.35 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "408b8aa6-0370-40d3-8db1-72053478aca5")
+		(property "Reference" "R544"
+			(at 641.35 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 641.35 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 641.35 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 641.35 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 641.35 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 641.35 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 641.35 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 641.35 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "157968c7-a410-477a-81e9-68c6a3d0cc28")
+		)
+		(pin "2"
+			(uuid "844f200d-4091-442c-b6fd-3cc678a9455e")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R544")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 236.22 254 90)
 		(unit 1)
 		(body_style 1)
@@ -24777,6 +26718,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "C305")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 633.73 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4462e062-27ef-48e1-954e-9a119a2c8c97")
+		(property "Reference" "R531"
+			(at 633.73 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 633.73 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 633.73 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 633.73 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 633.73 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 633.73 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 633.73 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 633.73 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18edcd9b-639d-410a-a193-965ed3778df5")
+		)
+		(pin "2"
+			(uuid "94ebe938-b1f4-40b8-9e61-1416fdaa6c75")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R531")
 					(unit 1)
 				)
 			)
@@ -25181,6 +27235,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 603.25 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4949aca3-1944-47e7-9a81-f3686cfea698")
+		(property "Reference" "R539"
+			(at 603.25 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 603.25 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 603.25 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 603.25 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 603.25 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 603.25 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 603.25 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 603.25 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1afe7e84-620a-481a-b631-80764beeead1")
+		)
+		(pin "2"
+			(uuid "5e921e2c-0382-42fb-abdf-c3dcf5efc294")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R539")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 400.05 435.61 0)
 		(unit 1)
@@ -25407,91 +27574,6 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "#FLG006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "flagship:R_D2PAK_TAB")
-		(at 594.36 59.69 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4c43c2b1-b2ef-4bc4-801b-fddb60ed3e09")
-		(property "Reference" "R511"
-			(at 596.9 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "24R D2TO35M"
-			(at 596.9 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 592.58 59.69 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 594.36 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor in D2PAK with an isolated tab (pads 1/3 resistor, pad 2 tab)"
-			(at 594.36 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f539fce4-bc01-4835-a8f6-021099deddeb")
-		)
-		(pin "2"
-			(uuid "1f6ae285-fb1a-4eb4-9444-e0f14624c164")
-		)
-		(pin "3"
-			(uuid "27b0c9fe-43d9-49bf-b558-281ecd8feaa0")
-		)
-		(instances
-			(project "ossm-flagship"
-				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
-					(reference "R511")
 					(unit 1)
 				)
 			)
@@ -25912,91 +27994,6 @@
 		)
 	)
 	(symbol
-		(lib_id "flagship:R_D2PAK_TAB")
-		(at 574.04 59.69 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5045d628-6ebf-4112-bfb7-202ed617ab55")
-		(property "Reference" "R510"
-			(at 576.58 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "24R D2TO35M"
-			(at 576.58 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 572.26 59.69 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 574.04 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor in D2PAK with an isolated tab (pads 1/3 resistor, pad 2 tab)"
-			(at 574.04 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "860a88e5-f0ba-4328-8b08-dc8033867ebd")
-		)
-		(pin "2"
-			(uuid "0c5f274e-4464-4128-8f6c-749ce0d60b67")
-		)
-		(pin "3"
-			(uuid "768f7531-1c9f-44d1-935e-a300a4e6d297")
-		)
-		(instances
-			(project "ossm-flagship"
-				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
-					(reference "R510")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 448.31 435.61 0)
 		(unit 1)
@@ -26390,6 +28387,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 588.01 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5818bf5b-cbb3-41b3-90d0-cfbf2779b888")
+		(property "Reference" "R525"
+			(at 588.01 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 588.01 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 588.01 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 588.01 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 588.01 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 588.01 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 588.01 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 588.01 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d1197e8-b399-4d15-8100-0eb34b51c4bc")
+		)
+		(pin "2"
+			(uuid "42ca163a-46bb-46c4-b046-215611d5d225")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R525")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_TVS")
 		(at 586.74 82.55 270)
 		(unit 1)
@@ -26465,6 +28575,232 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "D501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 610.87 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5971b6e7-f81e-412f-86f1-181e71f391c7")
+		(property "Reference" "R528"
+			(at 610.87 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 610.87 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 610.87 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 610.87 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 610.87 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 610.87 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 610.87 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 610.87 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f60c4753-2f40-4fe7-92f1-b2602e9f627b")
+		)
+		(pin "2"
+			(uuid "36a1bcec-6b4c-44b7-8101-15278e45215e")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R528")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 618.49 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "59c6e67e-5843-4edc-8a30-9e1d55604532")
+		(property "Reference" "R529"
+			(at 618.49 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 618.49 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 618.49 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 618.49 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 618.49 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 618.49 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 618.49 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 618.49 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06ca2237-1494-468d-a0a5-8a27749890d5")
+		)
+		(pin "2"
+			(uuid "a4e84499-db37-4443-b90f-c4361bec2503")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R529")
 					(unit 1)
 				)
 			)
@@ -28473,6 +30809,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 436.88 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7744863a-3e8a-4007-b1b0-05d2b947b00f")
+		(property "Reference" "J6"
+			(at 439.42 242.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FAN GH3"
+			(at 439.42 245.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal"
+			(at 436.88 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 436.88 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 436.88 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "ac183208-1c82-454d-bff8-dca36b9c4114")
+		)
+		(pin "2"
+			(uuid "6d38eee3-23e2-4d30-83e1-f1f497b7c477")
+		)
+		(pin "3"
+			(uuid "6010cc5b-07f0-49a2-beb2-a5a2ff8f4f25")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 83.82 322.58 0)
 		(unit 1)
@@ -28867,6 +31290,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "D503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 557.53 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ac5fe64-eec9-4c55-bb53-92b079cde971")
+		(property "Reference" "R533"
+			(at 557.53 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 557.53 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 557.53 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 557.53 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 557.53 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 557.53 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 557.53 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 557.53 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "763360df-d18f-4fdf-b3c5-59975ce24b7f")
+		)
+		(pin "2"
+			(uuid "137ee2dd-5fe1-49e2-a8b6-3affabaee02b")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R533")
 					(unit 1)
 				)
 			)
@@ -29740,83 +32276,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 571.5 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "80dd2f81-ed20-40fd-8b54-7948f9aee820")
-		(property "Reference" "#PWR0083"
-			(at 571.5 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 571.5 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 571.5 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 571.5 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 571.5 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5a881aa8-1367-4012-87a8-c10fddad295c")
-		)
-		(instances
-			(project "ossm-flagship"
-				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
-					(reference "#PWR0083")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 162.56 283.21 0)
 		(unit 1)
@@ -30221,6 +32680,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 626.11 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "83283988-0b71-4fd4-8e4b-355572fb710d")
+		(property "Reference" "R542"
+			(at 626.11 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 626.11 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 626.11 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 626.11 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 626.11 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 626.11 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 626.11 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 626.11 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35628b6e-5f8e-4ba5-998c-5e131eaee152")
+		)
+		(pin "2"
+			(uuid "863c32a5-968d-453e-8776-7ff4d67f8be5")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R542")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 66.04 299.72 0)
 		(unit 1)
@@ -30537,6 +33109,215 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 580.39 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a3b9be5-733b-4101-baee-8385230dcb1b")
+		(property "Reference" "R524"
+			(at 580.39 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 580.39 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 580.39 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 580.39 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 580.39 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 580.39 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 580.39 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 580.39 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1753a39b-c0b7-499e-a9cb-d05214678b1e")
+		)
+		(pin "2"
+			(uuid "ed748a24-2ad3-4fb4-a308-78b0a0f78d85")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R524")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 414.02 247.65 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ad283c4-70d4-41dd-ab41-bea2749a7388")
+		(property "Reference" "D701"
+			(at 416.56 246.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "B5819W"
+			(at 416.56 248.92 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 414.02 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 414.02 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 414.02 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC Part" "C8598"
+			(at 414.02 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "9c30ae65-d622-4693-90d0-3f5298617115")
+		)
+		(pin "2"
+			(uuid "5ac6eb8a-3c31-41b2-99ea-c034736ca247")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "D701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 584.2 110.49 90)
 		(unit 1)
@@ -30697,6 +33478,119 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 641.35 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8b8d97e1-12a5-4eaa-8ad9-44556cd276b6")
+		(property "Reference" "R532"
+			(at 641.35 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 641.35 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 641.35 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 641.35 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 641.35 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 641.35 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 641.35 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 641.35 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c60344a4-046b-43b9-90e9-5be78e3cf6a9")
+		)
+		(pin "2"
+			(uuid "4450593d-8406-436f-bb5f-ffe281e07fed")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R532")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 109.22 339.09 0)
 		(unit 1)
 		(body_style 1)
@@ -30771,83 +33665,6 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "R204")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 551.18 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8c7b6e29-ee75-4e4c-8a2b-8f3e1504a41c")
-		(property "Reference" "#PWR0084"
-			(at 551.18 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 551.18 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 551.18 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 551.18 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 551.18 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a08fa799-1c85-4a4a-9349-7ee51d65a4fd")
-		)
-		(instances
-			(project "ossm-flagship"
-				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
-					(reference "#PWR0084")
 					(unit 1)
 				)
 			)
@@ -30980,83 +33797,6 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 591.82 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "901c8770-ecb3-4980-ade8-0989bffbbf24")
-		(property "Reference" "#PWR0085"
-			(at 591.82 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 591.82 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 591.82 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 591.82 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 591.82 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1dd29d54-f582-4a52-90e6-bc54374b64c7")
-		)
-		(instances
-			(project "ossm-flagship"
-				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
-					(reference "#PWR0085")
 					(unit 1)
 				)
 			)
@@ -32409,6 +35149,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "R103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 580.39 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a108b03d-fb48-4906-b907-3b42b477e454")
+		(property "Reference" "R536"
+			(at 580.39 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 580.39 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 580.39 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 580.39 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 580.39 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 580.39 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 580.39 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 580.39 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "923c5a54-9ed8-4110-a8b6-0ee8ac4ec775")
+		)
+		(pin "2"
+			(uuid "ae77f322-4f9f-49c9-9f68-7662eb1c2340")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R536")
 					(unit 1)
 				)
 			)
@@ -34150,6 +37003,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "#PWR0070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 618.49 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b454bfbb-189d-46cf-82a3-be390ecb1930")
+		(property "Reference" "R541"
+			(at 618.49 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 618.49 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 618.49 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 618.49 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 618.49 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 618.49 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 618.49 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 618.49 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4489ff3-fd7e-43a8-ac1b-333d912f2a6e")
+		)
+		(pin "2"
+			(uuid "0ebecf66-de16-4fa5-b899-60f5a5ab7bf5")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R541")
 					(unit 1)
 				)
 			)
@@ -36881,91 +39847,6 @@
 		)
 	)
 	(symbol
-		(lib_id "flagship:R_D2PAK_TAB")
-		(at 553.72 59.69 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d5c7f6cc-4f00-4fc7-8b5b-00fdc902d43f")
-		(property "Reference" "R509"
-			(at 556.26 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "24R D2TO35M"
-			(at 556.26 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 551.94 59.69 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 553.72 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor in D2PAK with an isolated tab (pads 1/3 resistor, pad 2 tab)"
-			(at 553.72 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25eced62-5662-422a-aa4f-995b02278dda")
-		)
-		(pin "2"
-			(uuid "e74cf2f2-36ba-4d2f-8987-a181db3a4568")
-		)
-		(pin "3"
-			(uuid "354c3873-a909-438e-8cc5-f978f6f146b2")
-		)
-		(instances
-			(project "ossm-flagship"
-				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
-					(reference "R509")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 604.52 116.84 0)
 		(unit 1)
@@ -37297,8 +40178,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 419.1 284.48 0)
-		(mirror x)
+		(at 383.54 240.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -37308,7 +40188,7 @@
 		(dnp no)
 		(uuid "d8285f43-af2a-4267-9ab5-a6c1d4fd886c")
 		(property "Reference" "JP2"
-			(at 421.64 280.67 0)
+			(at 372.11 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37318,18 +40198,19 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FAN 12V default | cut+bridge 5V"
-			(at 419.1 288.29 0)
+		(property "Value" "FAN 5V default | cut+bridge 12V"
+			(at 377.19 234.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 419.1 284.48 0)
+			(at 383.54 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37340,7 +40221,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 419.1 269.24 0)
+			(at 383.54 224.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37351,7 +40232,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 419.1 271.78 0)
+			(at 383.54 227.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38010,6 +40891,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 588.01 66.04 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dd46d7f1-23b9-4d5e-9d33-a32460c1d9ad")
+		(property "Reference" "R537"
+			(at 588.01 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 588.01 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 588.01 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 588.01 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 588.01 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 588.01 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 588.01 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 588.01 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b762432-1f4f-4968-a44e-17d0a02305ae")
+		)
+		(pin "2"
+			(uuid "29c1a20a-b9c4-4220-8282-136b41d185cf")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R537")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 30.48 292.1 0)
 		(unit 1)
@@ -38245,6 +41239,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 391.16 247.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df368bf5-e20a-427d-a8e8-46672bd1d5c8")
+		(property "Reference" "R702"
+			(at 389.89 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1k"
+			(at 389.89 248.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 391.16 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 391.16 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 391.16 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "5edb19d6-c68b-49b3-b7cd-4a77fff8cd52")
+		)
+		(pin "2"
+			(uuid "62b9a26b-33de-430b-b2dc-51adfa399e28")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 142.24 63.5 0)
 		(unit 1)
@@ -38327,7 +41405,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 424.18 264.16 0)
+		(at 431.8 241.3 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38337,7 +41415,7 @@
 		(dnp no)
 		(uuid "df9e8e20-32e9-4a57-ae6e-7a064f1f222b")
 		(property "Reference" "#PWR0107"
-			(at 424.18 261.62 0)
+			(at 431.8 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38348,17 +41426,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 424.18 267.97 0)
+			(at 427.99 241.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 424.18 264.16 0)
+			(at 431.8 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38369,7 +41448,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 424.18 264.16 0)
+			(at 431.8 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38380,7 +41459,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 424.18 264.16 0)
+			(at 431.8 241.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38798,6 +41877,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 414.02 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e41a4ec4-99da-4b67-aaf7-10396e4a8484")
+		(property "Reference" "#PWR9700"
+			(at 414.02 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 414.02 255.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 414.02 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 414.02 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 414.02 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d66bcb7-fe02-445b-81b0-8af5b2e619c5")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "#PWR9700")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "flagship:INA228AIDGSR")
 		(at 93.98 177.8 0)
 		(unit 1)
@@ -39054,6 +42210,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "#PWR0061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 572.77 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e738932e-2602-4028-ac86-f8320666d643")
+		(property "Reference" "R523"
+			(at 572.77 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 572.77 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 572.77 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 572.77 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 572.77 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 572.77 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 572.77 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 572.77 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0b493ed5-55c7-4879-9d7a-ce20fdfd8ba8")
+		)
+		(pin "2"
+			(uuid "ef483647-7ff9-4567-ac0f-5b78afe5aad9")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R523")
 					(unit 1)
 				)
 			)
@@ -39540,7 +42809,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 393.7 269.24 0)
+		(at 398.78 269.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39550,7 +42819,7 @@
 		(dnp no)
 		(uuid "ed3f5e14-9e0e-4471-85ed-bf07a3718dcb")
 		(property "Reference" "#PWR0019"
-			(at 393.7 266.7 0)
+			(at 398.78 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39561,7 +42830,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 393.7 273.05 0)
+			(at 398.78 273.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39571,7 +42840,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 393.7 269.24 0)
+			(at 398.78 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39582,7 +42851,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 393.7 269.24 0)
+			(at 398.78 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39593,7 +42862,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 393.7 269.24 0)
+			(at 398.78 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40963,6 +44232,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 603.25 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f638a458-33dd-47f8-903f-7129e7837c8a")
+		(property "Reference" "R527"
+			(at 603.25 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 603.25 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 603.25 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 603.25 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 603.25 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 603.25 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 603.25 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 603.25 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7fffb3d-a424-4670-bc53-1280a8743f20")
+		)
+		(pin "2"
+			(uuid "418ef183-b5fb-456c-bcab-9d0f73557134")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R527")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_TVS")
 		(at 480.06 62.23 90)
 		(unit 1)
@@ -41688,6 +45070,119 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "Q401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 626.11 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fbcd07a9-9901-41df-bfa6-2509f90269a1")
+		(property "Reference" "R530"
+			(at 626.11 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200R AS122WJ0201T4E"
+			(at 626.11 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 626.11 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 626.11 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 626.11 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 626.11 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AS122WJ0201T4E"
+			(at 626.11 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2770484"
+			(at 626.11 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a121079b-be1b-4e5d-85e1-e69b327d1de3")
+		)
+		(pin "2"
+			(uuid "eaa9a872-ceb3-488b-9a0f-237fc3fd7a43")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R530")
 					(unit 1)
 				)
 			)

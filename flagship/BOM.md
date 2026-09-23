@@ -11,11 +11,11 @@ The full priced table lives outside the repo (regenerable); the numbers that mat
 
 | Per board | Parts only | Parts + PCB |
 |---|---|---|
-| 5 boards | ~$70.56 | ~$88.96 (PCB $18.40/board) |
-| 40 boards | ~$62.61 | ~$65.41 (PCB $2.80/board, the $112 JLCPCB quote) |
+| 5 boards | ~$72.56 | ~$90.96 (PCB $18.40/board) |
+| 40 boards | ~$64.61 | ~$67.41 (PCB $2.80/board, the $112 JLCPCB quote) |
 
-Both totals EXCLUDE R509-R511 (3x Vishay D2TO35M 24R), which no distributor listed under
-that exact part number. At a rough $8/unit that adds about $24/board.
+Totals include the regen bank (24 x AS122WJ0201T4E 200R 2512, LCSC C2770484, ~$0.08 each, ~$2/board) and the
+high-side fan switch (AO3401A, B5819W, one 10k: cents).
 
 ## Cost drivers (per board, 40-board run)
 
@@ -34,5 +34,4 @@ that exact part number. At a rough $8/unit that adds about $24/board.
 
 ## Open before ordering
 
-- **Regen resistors R509-R511:** confirm the D2TO35M 24R ordering code and price.
 - Thin stock at pull time: L2, L3, R1/R401 shunts, R412 (12-30 units).

@@ -44,14 +44,15 @@ Back-driving the motor pumps energy into the bus. The clamp burns it off before
 the supply's overvoltage protection trips, with no firmware involved.
 
 - Comparator switches the dump FET on at 44.5 V and off at 43.2 V.
-- Load: 3 x 24 ohm Vishay D2TO35M power resistors (8 ohm total), tabs into the
-  heatsink. Sized for about 7 W continuous and 150 W peak.
+- Load: 24 x 200 ohm anti-surge 2512 chip resistors in parallel (8.33 ohm total),
+  spread over copper islands under the heatsink. Sized for about 7 W continuous
+  and 190 W peak.
 - Freewheel diode across the resistors, TVS across the switch.
 - **External brake resistor port** (XT30) with a cut-jumper: add a resistor in
   parallel with the on-board bank, or cut the jumper to use it instead.
 - **Amber LED** lights whenever the clamp is dumping.
 - **Clamp monitoring:** the P4 times how long the clamp is on (clamp power =
-  duty x V^2 / 8 ohm) and reads a thermistor on the resistor bank, so firmware
+  duty x V^2 / 8.33 ohm) and reads a thermistor on the resistor bank, so firmware
   can report regen over Valence and back off motion before anything trips.
 
 ## Motor output
@@ -106,8 +107,8 @@ Two connectors on each side of the board, mirrored:
 ## Sensing and cooling
 
 - Thermistor input for an external temperature probe.
-- Fan header, 12 V by default or 5 V by solder jumper, with tachometer input and
-  PWM speed control.
+- 3-pin fan header (GND, +V, tach), 5 V by default or 12 V by solder jumper, with
+  PWM speed control on the fan's supply and a tachometer input.
 
 ## Board
 
