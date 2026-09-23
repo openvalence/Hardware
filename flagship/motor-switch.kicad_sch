@@ -4316,7 +4316,7 @@
 				)
 			)
 		)
-		(property "Value" "2m WSK25122L000FEA"
+		(property "Value" "2m CSS2H-2512K-2L00F"
 			(at 43.18 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4326,7 +4326,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T2.21mm"
+		(property "Footprint" "flagship:R_2512_Shunt_PseudoKelvin"
 			(at 41.4 60.96 90)
 			(hide yes)
 			(show_name no)
