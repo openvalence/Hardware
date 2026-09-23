@@ -3248,7 +3248,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 66.04 146.04999999999998 0)
+			(at 66.04 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3329,7 +3329,7 @@
 			)
 		)
 		(property "Value" "DNP"
-			(at 96.52 166.36999999999998 0)
+			(at 96.52 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3409,8 +3409,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
-			(at 233.68 85.08999999999999 0)
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
+			(at 233.68 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3490,7 +3490,7 @@
 			)
 		)
 		(property "Value" "TPS54560B 5V"
-			(at 261.62 97.78999999999999 0)
+			(at 261.62 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3979,8 +3979,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
-			(at 11.43 85.08999999999999 0)
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
+			(at 11.43 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4060,7 +4060,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
 			(at 30.48 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4609,8 +4609,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
-			(at 43.18 161.29000000000002 0)
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
+			(at 43.18 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4690,7 +4690,7 @@
 			)
 		)
 		(property "Value" "243k"
-			(at 57.15 179.07000000000002 0)
+			(at 57.15 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4923,7 +4923,7 @@
 			)
 		)
 		(property "Value" "887k"
-			(at 52.07 85.08999999999999 0)
+			(at 52.07 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5003,7 +5003,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 66.04 69.85000000000001 0)
+			(at 66.04 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5083,7 +5083,7 @@
 			)
 		)
 		(property "Value" "52.3k"
-			(at 313.69 97.78999999999999 0)
+			(at 313.69 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6092,7 +6092,7 @@
 			)
 		)
 		(property "Value" "887k"
-			(at 242.57 85.08999999999999 0)
+			(at 242.57 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6408,7 +6408,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
 			(at 30.48 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6568,8 +6568,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
-			(at 11.43 161.29000000000002 0)
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
+			(at 11.43 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6749,7 +6749,7 @@
 			)
 		)
 		(property "Value" "887k"
-			(at 52.07 161.29000000000002 0)
+			(at 52.07 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7535,7 +7535,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
 			(at 24.13 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7770,7 +7770,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 123.19 189.23000000000002 0)
+			(at 123.19 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8082,7 +8082,7 @@
 			)
 		)
 		(property "Value" "243k"
-			(at 247.65 102.86999999999999 0)
+			(at 247.65 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8641,8 +8641,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
-			(at 201.93 85.08999999999999 0)
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
+			(at 201.93 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8878,7 +8878,7 @@
 			)
 		)
 		(property "Value" "243k"
-			(at 57.15 102.86999999999999 0)
+			(at 57.15 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9036,7 +9036,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
 			(at 214.63 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9357,7 +9357,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 256.54 69.85000000000001 0)
+			(at 256.54 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9591,7 +9591,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
 			(at 220.98 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9826,7 +9826,7 @@
 			)
 		)
 		(property "Value" "6.8u Isat>=7.5A"
-			(at 106.68 149.85999999999999 0)
+			(at 106.68 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10296,7 +10296,7 @@
 			)
 		)
 		(property "Value" "TPS54560B 12V"
-			(at 71.12 97.78999999999999 0)
+			(at 71.12 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10396,7 +10396,7 @@
 			)
 		)
 		(property "Value" "53.6k"
-			(at 44.45 175.26000000000002 0)
+			(at 44.45 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11016,7 +11016,7 @@
 			)
 		)
 		(property "Value" "140k"
-			(at 123.19 97.78999999999999 0)
+			(at 123.19 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11334,7 +11334,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
 			(at 24.13 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11415,8 +11415,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u 100V"
-			(at 43.18 85.08999999999999 0)
+		(property "Value" "2.2u 100V GRM32ER72A225KA35L"
+			(at 43.18 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
