@@ -30,3 +30,4 @@ Thumbs.db
 # tooling
 .venv/
 *.wrl
+_restore_backup_*/
