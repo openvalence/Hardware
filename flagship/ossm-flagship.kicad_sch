@@ -4374,6 +4374,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, open"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:SolderJumper_2_Bridged"
 			(pin_numbers
 				(hide yes)
@@ -12450,7 +12616,7 @@
 		)
 		(uuid "0e3bd821-5e3a-496e-a7e4-6beb433ca015")
 	)
-	(text "SENSING (record sections 10, 12). U11 INA228 on the R2 Kelvin taps (Input sheet):\n  route INA_SENSE_P/N as a tight pair, INA beside the shunt, away from switch nodes.\n1 mOhm: 10 mV at 10 A in the +-163.84 mV range. Die temperature = board temperature.\n  A0/A1 = GND (0x40).\nINA_ALERT_N (open drain) is also the motor-switch EN: over-current / power /\n  temperature limits cut the motor with no MCU.\nR24/R25: fit only if the stamp or the C6 add-on has no I2C pull-ups (SPEC open item\n  on the shared bus).\nConnectors are the operator's: THERM_IN (NTC to GND), 3-pin FAN (GND, +V, TACH). JP2\n  sets the fan supply: 5 V default, 12 V by jumper (section 10).\nFan PWM is high-side: Q702 AO3401A switches the fan's +V, driven by Q701 2N7002\n  (P4 high = on), so the fan ground stays solid. L701 + C701 filter the switched\n  supply into DC (a small buck, D701 B5819W freewheels), so the tach is valid at\n  every speed; PWM ~50 kHz. At fan-level current the inductor runs discontinuous, so\n  fan voltage is not linear in duty: firmware closes the loop on the tach.\nGate divider: R702 1k / R703 470R hold Vgs under the AO3401A's 12 V rating on the\n  12 V setting (-8.2 V; -3.4 V at 5 V).\nR704 1R + C702 100u damp the LC (hard duty step overshoot 0-6%, was +60-75%); F701\n  0.5 A polyfuse feeds the fan (header short). A dead short still sags the chosen\n  rail until F701 trips (~0.1 s), which can reset the P4 on the 5 V setting."
+	(text "SENSING (record sections 10, 12). U11 INA228 on the R2 Kelvin taps (Input sheet):\n  route INA_SENSE_P/N as a tight pair, INA beside the shunt, away from switch nodes.\n1 mOhm: 10 mV at 10 A in the +-163.84 mV range. Die temperature = board temperature.\n  A0/A1 = GND (0x40).\nINA_ALERT_N (open drain) is also the motor-switch EN: over-current / power /\n  temperature limits cut the motor with no MCU.\nR24/R25 4.7k always fitted (the stamp has no I2C pull-ups; G36 also carries the\n  stamp's own 10k pull-up).\nConnectors are the operator's: THERM_IN (NTC to GND), 3-pin FAN (GND, +V, TACH). JP2\n  sets the fan supply: 5 V default, 12 V by jumper (section 10).\nFan PWM is high-side: Q702 AO3401A switches the fan's +V, driven by Q701 2N7002\n  (P4 high = on), so the fan ground stays solid. L701 + C701 filter the switched\n  supply into DC (a small buck, D701 B5819W freewheels), so the tach is valid at\n  every speed; PWM ~50 kHz. At fan-level current the inductor runs discontinuous, so\n  fan voltage is not linear in duty: firmware closes the loop on the tach.\nGate divider: R702 1k / R703 470R hold Vgs under the AO3401A's 12 V rating on the\n  12 V setting (-8.2 V; -3.4 V at 5 V).\nR704 1R + C702 100u damp the LC (hard duty step overshoot 0-6%, was +60-75%); F701\n  0.5 A polyfuse feeds the fan (header short). A dead short still sags the chosen\n  rail until F701 trips (~0.1 s), which can reset the P4 on the 5 V setting."
 		(exclude_from_sim no)
 		(at 474.98 278.13 0)
 		(effects
@@ -12644,7 +12810,7 @@
 		)
 		(uuid "f2366600-62d6-40c0-becc-a0eab5331d07")
 	)
-	(text "COMPUTE (record section 8; SPEC: no RP2350, the P4 LP core emits quadrature).\n  Stamp-P4 + Stamp-AddOn C6 stacked on\n  top (SDIO G42-G48, not castellated).\nFixed pins only: VIN (14) from +5V, the stamp ORs it with its own USB-C 5V and makes\n  SOC_3.3V itself; all GND pads.\n  No reset button: CHIP_EN and G35 go to tweezer pads TP901 / TP903 beside GND pad\n    TP902 (stamp has 10k pull-ups).\nG35 appears on pads 36 AND 48 in M5's own symbol and schematic: both wired to\n  P4_BOOT.\nPIN ASSIGNMENT FOLLOWS LAYOUT (operator ruling): each function net below gets the\n  stamp pad nearest its circuit\n  once parts are placed.\n  QUAD_A, QUAD_B          LP GPIO (LPG0-15) for the LP-core emitter; avoid LPG14/15\n    (LP UART console)\n  I2C_SDA, I2C_SCL        LPG11 / LPG9 are the module I2C (shared with the add-on\n    connector; SPEC open item)\n  RS485_TX, RS485_RX, RS485_DE   any HP GPIO via the matrix (UART RS485 half-duplex\n    mode)\n  MOTOR_EN, PRECHARGE_EN, MSW_FLT_N, INA_ALERT_N, CLAMP_MON, DRV_ALM, DRV_RDY,\n    FAN_PWM, FAN_TACH, LED_DATA,\n    BTN_HOME, BTN_PAIR\n  MSW_IMON, THERM, SHUNT_TEMP   ADC1 (G16-G23)\n  Avoid straps: G34 (JTAG enable), G35 (boot), G36, G37/G38 (UART0 console). Buttons\n    NEVER on a strap: a button\n    held at power-on must reach firmware, not the ROM.\nD5 status pixel: LED_DATA -> AHCT125 gate 3 (Drive IO) -> LED_DIN at 5 V (WS2812B\n  VIH = 0.7 VDD).\nSW1 HOME: press = home, hold = reset (firmware, on release). SW2 PAIR: hold = pair,\n  held at power-on = AP config\n  mode, press TBD. Both use the P4's internal pull-ups.\nRescue: short TP901 (EN) to TP902 = reset; hold TP903 (BOOT) to TP902 while\n  resetting = ROM download mode (USB\n  flashing enters it on its own)."
+	(text "COMPUTE (record section 8; SPEC: no RP2350, the P4 LP core emits quadrature).\n  Stamp-P4 + Stamp-AddOn C6 stacked on\n  top (SDIO G42-G48, not castellated).\nFixed pins only: VIN (14) from +5V, the stamp ORs it with its own USB-C 5V and makes\n  SOC_3.3V itself; all GND pads.\n  No reset button: CHIP_EN and G35 go to tweezer pads TP901 / TP903 beside GND pad\n    TP902 (stamp has 10k pull-ups).\nG35 appears on pads 36 AND 48 in M5's own symbol and schematic: both wired to\n  P4_BOOT.\nPIN ASSIGNMENT FOLLOWS LAYOUT (operator ruling): each function net below gets the\n  stamp pad nearest its circuit once parts are placed. LP pins (LPG0-15) carry\n  quadrature only (operator ruling).\n  QUAD_A, QUAD_B          LPG3 / LPG5 for the LP-core emitter; avoid LPG14/15\n    (LP UART console)\n  I2C_SDA, I2C_SCL        G34 / G36, the INA228 bus (module I2C LPG11/LPG9 is LP)\n  RS485_TX, RS485_RX, RS485_DE   any HP GPIO via the matrix (UART RS485 half-duplex\n    mode)\n  MOTOR_EN, PRECHARGE_EN, MSW_FLT_N, INA_ALERT_N, CLAMP_MON, DRV_ALM, DRV_RDY,\n    FAN_PWM G27, FAN_TACH G38, LED_DATA G26, BTN_HOME G49, BTN_PAIR G52\n  MSW_IMON, THERM, SHUNT_TEMP   ADC1 (G16-G23)\n  Straps: G35 (boot) and G37 (ROM log at every reset) stay unused. Safe uses:\n    G34 SDA (eFuse-ignored), G36 SCL (held high), G38 TACH (download-only). Buttons\n    NEVER on a strap: a button held at power-on must reach firmware, not the ROM.\nD5 status pixel: LED_DATA -> AHCT125 gate 3 (Drive IO) -> LED_DIN at 5 V (WS2812B\n  VIH = 0.7 VDD).\nSW1 HOME: press = home, hold = reset (firmware, on release). SW2 PAIR: hold = pair,\n  held at power-on = AP config\n  mode, press TBD. Both use the P4's internal pull-ups.\nRescue: short TP901 (EN) to TP902 = reset; hold TP903 (BOOT) to TP902 while\n  resetting = ROM download mode (USB\n  flashing enters it on its own)."
 		(exclude_from_sim no)
 		(at 588.01 196.85 0)
 		(effects
@@ -12842,7 +13008,7 @@
 		(uuid "25ca7ddf-257a-4190-9a63-202ae45a9bbb")
 	)
 	(junction
-		(at 334.01 363.22)
+		(at 332.74 363.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26226813-e94c-44bc-8969-c19f8f4b4d0b")
@@ -13010,6 +13176,12 @@
 		(uuid "4b08e8dc-9c9b-491d-8965-30a5b1d852cb")
 	)
 	(junction
+		(at 120.65 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b7376bd-1409-4172-8a66-9b782d38c95f")
+	)
+	(junction
 		(at 609.6 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13136,7 +13308,7 @@
 		(uuid "6ec54dd6-20a1-4e1d-ab27-0b281682cb5d")
 	)
 	(junction
-		(at 334.01 355.6)
+		(at 332.74 355.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6eca970f-f564-4b42-8249-2b08b03a307f")
@@ -13310,12 +13482,6 @@
 		(uuid "97de1260-c623-45a1-bf64-c217b41dc0ab")
 	)
 	(junction
-		(at 240.03 254)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97eaf9fd-3c0c-49f8-aa97-b72f016186bc")
-	)
-	(junction
 		(at 119.38 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13436,6 +13602,12 @@
 		(uuid "a90f0e83-038c-4510-afdc-195295cc07f5")
 	)
 	(junction
+		(at 240.03 251.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa8740e2-29a9-4d84-8d7f-0a5946dce0fd")
+	)
+	(junction
 		(at 599.44 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13500,6 +13672,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be4fe1d3-4edb-4e1e-aee9-996ebc8be218")
+	)
+	(junction
+		(at 408.94 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c248b5ca-818d-4e64-b3be-fc1c897162ef")
 	)
 	(junction
 		(at 412.75 440.69)
@@ -13658,6 +13836,12 @@
 		(uuid "ea38e769-e106-4f1f-b99f-ab381fd87d9f")
 	)
 	(junction
+		(at 58.42 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eccc2c19-8ab8-4d2d-b536-5749e63625a9")
+	)
+	(junction
 		(at 391.16 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13688,7 +13872,7 @@
 		(uuid "f21b9e47-70f7-47ae-85ed-e0724be3c7ff")
 	)
 	(junction
-		(at 334.01 347.98)
+		(at 332.74 347.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2b461dc-8cf3-429c-a7a7-0cf5015a857f")
@@ -13698,6 +13882,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2bd19a7-1f8d-4026-96ad-ca1995850ed4")
+	)
+	(junction
+		(at 477.52 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f87d5fa7-3ea2-44e0-9fb4-4d7e74c4f1b8")
 	)
 	(junction
 		(at 45.72 332.74)
@@ -13949,13 +14139,23 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 292.1) (xy 247.65 292.1)
+			(xy 120.65 26.67) (xy 120.65 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0a2179b3-2fa6-4f10-b457-75066e42250d")
+		(uuid "0a3b3d4f-10bb-411e-9ef8-72a6ddda3f63")
+	)
+	(wire
+		(pts
+			(xy 349.25 369.57) (xy 349.25 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a8adf28-32f6-4da2-9ffd-c12acc2702c3")
 	)
 	(wire
 		(pts
@@ -14289,6 +14489,16 @@
 	)
 	(wire
 		(pts
+			(xy 335.28 251.46) (xy 335.28 297.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bd90547-2342-4855-bc57-46d3d51145b9")
+	)
+	(wire
+		(pts
 			(xy 349.25 274.32) (xy 331.47 274.32)
 		)
 		(stroke
@@ -14319,7 +14529,7 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 355.6) (xy 334.01 363.22)
+			(xy 332.74 355.6) (xy 332.74 363.22)
 		)
 		(stroke
 			(width 0)
@@ -14366,6 +14576,16 @@
 			(type default)
 		)
 		(uuid "1f45b7fc-6fca-4f7d-a485-33bfa329980d")
+	)
+	(wire
+		(pts
+			(xy 335.28 297.18) (xy 331.47 297.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f8c6705-c7db-4403-9f59-53a5bd8ade27")
 	)
 	(wire
 		(pts
@@ -14426,6 +14646,16 @@
 			(type default)
 		)
 		(uuid "21ac904a-5801-466c-8d7f-e3c392699194")
+	)
+	(wire
+		(pts
+			(xy 242.57 195.58) (xy 242.57 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2245fd59-abaa-4802-9b45-29d8f1c9ec08")
 	)
 	(wire
 		(pts
@@ -14529,6 +14759,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 251.46) (xy 240.03 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26b58fe8-5e08-43c6-8197-6f7d9d80c11d")
+	)
+	(wire
+		(pts
 			(xy 416.56 440.69) (xy 430.53 440.69)
 		)
 		(stroke
@@ -14546,6 +14786,16 @@
 			(type default)
 		)
 		(uuid "27953e37-fbb2-4317-89f5-0533beb40b36")
+	)
+	(wire
+		(pts
+			(xy 335.28 334.01) (xy 331.47 334.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27a2bf87-e018-4be1-83b2-6fa763bca0ab")
 	)
 	(wire
 		(pts
@@ -14799,16 +15049,6 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 281.94) (xy 331.47 281.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "322c7468-edd3-4a49-9ed7-472a721a7227")
-	)
-	(wire
-		(pts
 			(xy 431.8 134.62) (xy 426.72 134.62)
 		)
 		(stroke
@@ -14856,6 +15096,16 @@
 			(type default)
 		)
 		(uuid "365acb6b-b5a7-49ca-a7e3-939d72b6977d")
+	)
+	(wire
+		(pts
+			(xy 58.42 26.67) (xy 84.455 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36746e74-b2bc-44b5-a9ca-3a0f0ddde622")
 	)
 	(wire
 		(pts
@@ -15259,6 +15509,16 @@
 	)
 	(wire
 		(pts
+			(xy 94.615 26.67) (xy 120.65 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4395388a-c770-4dc6-b147-40198e8f4169")
+	)
+	(wire
+		(pts
 			(xy 157.48 356.87) (xy 93.98 356.87)
 		)
 		(stroke
@@ -15266,6 +15526,16 @@
 			(type default)
 		)
 		(uuid "43ad31f7-7552-4894-bd8b-affab4852e91")
+	)
+	(wire
+		(pts
+			(xy 335.28 403.86) (xy 335.28 334.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43ff7a6f-e224-41b2-b7c2-1410083758e4")
 	)
 	(wire
 		(pts
@@ -15329,6 +15599,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 55.88) (xy 58.42 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "476c544b-42c3-44ae-81c6-85401994d678")
+	)
+	(wire
+		(pts
 			(xy 77.47 198.12) (xy 240.03 198.12)
 		)
 		(stroke
@@ -15346,6 +15626,16 @@
 			(type default)
 		)
 		(uuid "477c3760-3089-4fe9-9d0a-35a34e514151")
+	)
+	(wire
+		(pts
+			(xy 408.94 55.88) (xy 408.94 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a16275-5a8f-4024-826d-f35b45f17f1a")
 	)
 	(wire
 		(pts
@@ -15619,16 +15909,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 403.86) (xy 213.36 403.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52985e88-7345-4e01-9df2-4e4dd7d1927a")
-	)
-	(wire
-		(pts
 			(xy 449.58 63.5) (xy 449.58 76.2)
 		)
 		(stroke
@@ -15646,6 +15926,16 @@
 			(type default)
 		)
 		(uuid "52d4af1f-57f7-47d8-89fe-75c03b1fea7b")
+	)
+	(wire
+		(pts
+			(xy 448.31 29.21) (xy 477.52 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53707682-3b3b-4dd7-860e-1e74345e7103")
 	)
 	(wire
 		(pts
@@ -15699,6 +15989,16 @@
 	)
 	(wire
 		(pts
+			(xy 477.52 29.21) (xy 477.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "548395b2-39f8-4ff5-86e5-535c2734b9c7")
+	)
+	(wire
+		(pts
 			(xy 619.76 173.99) (xy 609.6 173.99)
 		)
 		(stroke
@@ -15719,6 +16019,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 251.46) (xy 335.28 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55513363-6b72-4ede-80f9-485068605c23")
+	)
+	(wire
+		(pts
 			(xy 614.68 60.96) (xy 614.68 66.04)
 		)
 		(stroke
@@ -15736,6 +16046,16 @@
 			(type default)
 		)
 		(uuid "561552ee-dd30-4b46-a9bc-a8c95f96bbcd")
+	)
+	(wire
+		(pts
+			(xy 337.82 248.92) (xy 337.82 313.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56682d35-b3c1-4e2f-acf5-dd4e39792e5e")
 	)
 	(wire
 		(pts
@@ -15819,6 +16139,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 369.57) (xy 349.25 369.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a357915-3328-4003-ab1e-884e1b231902")
+	)
+	(wire
+		(pts
 			(xy 518.16 20.32) (xy 518.16 55.88)
 		)
 		(stroke
@@ -15829,7 +16159,7 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 347.98) (xy 334.01 355.6)
+			(xy 332.74 347.98) (xy 332.74 355.6)
 		)
 		(stroke
 			(width 0)
@@ -15849,7 +16179,7 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 340.36) (xy 334.01 347.98)
+			(xy 332.74 340.36) (xy 332.74 347.98)
 		)
 		(stroke
 			(width 0)
@@ -16049,6 +16379,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 335.28) (xy 246.38 335.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "650f48fa-4831-4c27-a7dc-1b03abd308a2")
+	)
+	(wire
+		(pts
 			(xy 71.12 81.28) (xy 81.28 81.28)
 		)
 		(stroke
@@ -16146,6 +16486,16 @@
 			(type default)
 		)
 		(uuid "68f2ddcd-90eb-4271-9c64-8339b221bbef")
+	)
+	(wire
+		(pts
+			(xy 240.03 198.12) (xy 240.03 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69dab118-98ff-4887-ae91-02423a6eece8")
 	)
 	(wire
 		(pts
@@ -16379,6 +16729,16 @@
 	)
 	(wire
 		(pts
+			(xy 408.94 29.21) (xy 438.15 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7923ba7e-f107-4b47-a13d-e71c0109407a")
+	)
+	(wire
+		(pts
 			(xy 452.12 66.04) (xy 452.12 76.2)
 		)
 		(stroke
@@ -16529,16 +16889,6 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 264.16) (xy 356.87 264.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80edc780-ec9e-4b24-a8c1-909a76e3f607")
-	)
-	(wire
-		(pts
 			(xy 81.28 114.3) (xy 81.28 124.46)
 		)
 		(stroke
@@ -16679,16 +17029,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 274.32) (xy 247.65 274.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8aa93148-6f0f-4320-9c98-8c51b119a3f8")
-	)
-	(wire
-		(pts
 			(xy 53.34 284.48) (xy 66.04 284.48)
 		)
 		(stroke
@@ -16696,16 +17036,6 @@
 			(type default)
 		)
 		(uuid "8af2e7d7-7a40-404b-9847-2a375866d7bb")
-	)
-	(wire
-		(pts
-			(xy 359.41 284.48) (xy 331.47 284.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b65c804-41b7-4584-96a0-9a13491f0073")
 	)
 	(wire
 		(pts
@@ -16746,6 +17076,16 @@
 			(type default)
 		)
 		(uuid "8d763700-48ec-4f88-ae30-59168901e647")
+	)
+	(wire
+		(pts
+			(xy 355.6 264.16) (xy 375.92 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e2073ca-105f-43a6-b866-f3062c95bead")
 	)
 	(wire
 		(pts
@@ -16876,6 +17216,16 @@
 			(type default)
 		)
 		(uuid "95f1f78f-f14c-4a33-8a58-6d2ea697f79a")
+	)
+	(wire
+		(pts
+			(xy 246.38 335.28) (xy 246.38 369.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "960a23d8-5d40-41b0-8637-a4a746cf10a0")
 	)
 	(wire
 		(pts
@@ -17049,16 +17399,6 @@
 	)
 	(wire
 		(pts
-			(xy 334.01 363.22) (xy 334.01 365.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f9849cd-432e-4c14-9c3f-e5456a4bc7d5")
-	)
-	(wire
-		(pts
 			(xy 386.08 157.48) (xy 336.55 157.48)
 		)
 		(stroke
@@ -17116,6 +17456,26 @@
 			(type default)
 		)
 		(uuid "a13422c6-fc3c-459d-ac0d-fa01cf01f660")
+	)
+	(wire
+		(pts
+			(xy 337.82 313.69) (xy 331.47 313.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a15861d8-f541-4c78-9963-7942c6394e3f")
+	)
+	(wire
+		(pts
+			(xy 359.41 294.64) (xy 331.47 294.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a16f57c7-1c3c-46f2-8f50-211b4bd3d450")
 	)
 	(wire
 		(pts
@@ -17369,16 +17729,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 195.58) (xy 242.57 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac613bfc-3a44-424f-920e-63f3ba19441d")
-	)
-	(wire
-		(pts
 			(xy 134.62 55.88) (xy 142.24 55.88)
 		)
 		(stroke
@@ -17429,7 +17779,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 340.36) (xy 334.01 340.36)
+			(xy 331.47 340.36) (xy 332.74 340.36)
 		)
 		(stroke
 			(width 0)
@@ -17476,6 +17826,16 @@
 			(type default)
 		)
 		(uuid "b2635266-8bd3-4587-bc7b-489603b80e98")
+	)
+	(wire
+		(pts
+			(xy 242.57 248.92) (xy 337.82 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2fe03df-c08e-4568-886f-4e8743b2e98f")
 	)
 	(wire
 		(pts
@@ -17526,6 +17886,16 @@
 			(type default)
 		)
 		(uuid "b529edd5-9c4d-4591-962f-512b7c200060")
+	)
+	(wire
+		(pts
+			(xy 359.41 279.4) (xy 359.41 294.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b57a2b8c-d1a0-4f73-8fd5-293e55affa2c")
 	)
 	(wire
 		(pts
@@ -17709,6 +18079,16 @@
 	)
 	(wire
 		(pts
+			(xy 332.74 363.22) (xy 332.74 373.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbd151d8-e205-4059-a3c0-e983ff0cefcb")
+	)
+	(wire
+		(pts
 			(xy 356.87 307.34) (xy 356.87 287.02)
 		)
 		(stroke
@@ -17869,16 +18249,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 198.12) (xy 240.03 274.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2243213-ee0c-45e8-81d7-55c829447261")
-	)
-	(wire
-		(pts
 			(xy 401.32 322.58) (xy 401.32 312.42)
 		)
 		(stroke
@@ -17899,7 +18269,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 363.22) (xy 334.01 363.22)
+			(xy 331.47 363.22) (xy 332.74 363.22)
 		)
 		(stroke
 			(width 0)
@@ -18089,16 +18459,6 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 304.8) (xy 331.47 304.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cce38fc2-9bd1-4a1d-9383-b9ee1450f269")
-	)
-	(wire
-		(pts
 			(xy 449.58 104.14) (xy 449.58 116.84)
 		)
 		(stroke
@@ -18179,13 +18539,23 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 264.16) (xy 356.87 281.94)
+			(xy 247.65 332.74) (xy 245.11 332.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d19ba9cf-861d-4f3a-98ab-78583dfc8e6e")
+		(uuid "d156588c-8d97-4591-b20c-051833a15f29")
+	)
+	(wire
+		(pts
+			(xy 245.11 332.74) (xy 245.11 370.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1a9eb59-f8d0-4dd0-b3bb-0a51e71b32e0")
 	)
 	(wire
 		(pts
@@ -18239,7 +18609,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 355.6) (xy 334.01 355.6)
+			(xy 331.47 355.6) (xy 332.74 355.6)
 		)
 		(stroke
 			(width 0)
@@ -18259,13 +18629,13 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 403.86) (xy 213.36 292.1)
+			(xy 198.12 403.86) (xy 335.28 403.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d52d4aa7-6189-49a2-bf63-f9b24e8e3af3")
+		(uuid "d4e2ffee-8541-424e-a25f-3f2c603c7a26")
 	)
 	(wire
 		(pts
@@ -18466,6 +18836,16 @@
 			(type default)
 		)
 		(uuid "dc18b024-169c-4d96-a37b-21b0fc0560b8")
+	)
+	(wire
+		(pts
+			(xy 355.6 370.84) (xy 355.6 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc66f18a-aa43-4d40-9da2-68f3d063da45")
 	)
 	(wire
 		(pts
@@ -18759,6 +19139,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 370.84) (xy 355.6 370.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea79fd21-fc03-4896-a738-b2dc9aceea93")
+	)
+	(wire
+		(pts
 			(xy 66.04 330.2) (xy 66.04 320.04)
 		)
 		(stroke
@@ -18829,7 +19219,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 347.98) (xy 334.01 347.98)
+			(xy 331.47 347.98) (xy 332.74 347.98)
 		)
 		(stroke
 			(width 0)
@@ -18886,16 +19276,6 @@
 			(type default)
 		)
 		(uuid "ee9bda5c-22c1-49ee-b2d8-6bf18fe199ab")
-	)
-	(wire
-		(pts
-			(xy 349.25 337.82) (xy 349.25 304.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef037a1f-00e5-4aaa-b4e1-2a395e9baa3b")
 	)
 	(wire
 		(pts
@@ -19119,16 +19499,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 269.24) (xy 247.65 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb8db201-e4f7-4a12-b879-d5f90ff00efe")
-	)
-	(wire
-		(pts
 			(xy 379.73 430.53) (xy 382.27 430.53)
 		)
 		(stroke
@@ -19186,16 +19556,6 @@
 			(type default)
 		)
 		(uuid "fd96e84f-87c3-4c65-976a-a63f5e40ce18")
-	)
-	(wire
-		(pts
-			(xy 359.41 279.4) (xy 359.41 284.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe730640-b966-40a4-920d-65bcf6d950bf")
 	)
 	(wire
 		(pts
@@ -29911,7 +30271,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 334.01 365.76 0)
+		(at 332.74 373.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29921,7 +30281,7 @@
 		(dnp no)
 		(uuid "4d19ffbf-3398-424b-ab28-e2b414f7b003")
 		(property "Reference" "#PWR0100"
-			(at 334.01 363.22 0)
+			(at 332.74 370.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29932,7 +30292,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 332.74 369.57 0)
+			(at 331.47 377.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29943,7 +30303,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 334.01 365.76 0)
+			(at 332.74 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29954,7 +30314,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 334.01 365.76 0)
+			(at 332.74 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29965,7 +30325,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 334.01 365.76 0)
+			(at 332.74 373.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30739,6 +31099,88 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "R525")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 443.23 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "58d394b1-a9bb-4192-8658-7c1598d1fe2e")
+		(property "Reference" "JP401"
+			(at 443.23 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BUDGET LINK (open)"
+			(at 443.23 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "flagship:Link_Wire_15A"
+			(at 443.23 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 443.23 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Budget-build 15 A wire link, normally open"
+			(at 443.23 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "72f0a9a2-c0ab-4d96-a9c0-8616aed84e47")
+		)
+		(pin "2"
+			(uuid "1c5c1576-4067-4881-84a4-3f94d7cbfcf2")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "JP401")
 					(unit 1)
 				)
 			)
@@ -32126,6 +32568,88 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "C111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 89.535 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "691b9f12-baec-4109-9525-3d9fea61dd7c")
+		(property "Reference" "JP801"
+			(at 89.535 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BUDGET LINK (open)"
+			(at 89.535 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "flagship:Link_Wire_15A"
+			(at 89.535 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 89.535 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "Budget-build 15 A wire link, normally open"
+			(at 89.535 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "809d3c3c-6532-4d3f-965c-ec30aa9ad849")
+		)
+		(pin "2"
+			(uuid "54f48add-0cc8-485b-a4a0-b443ea60d412")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "JP801")
 					(unit 1)
 				)
 			)
