@@ -12410,6 +12410,12 @@
 		(uuid "a622e72c-d950-4459-92cc-49b04284837a")
 	)
 	(junction
+		(at 391.16 307.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a818351a-6305-4181-aedf-d86a9f74d36a")
+	)
+	(junction
 		(at 416.56 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12570,6 +12576,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea05ac25-3e74-49e9-aab8-f09218cab14b")
+	)
+	(junction
+		(at 391.16 322.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea0d80dd-bf09-4aa5-ab42-00f93cc26c02")
 	)
 	(junction
 		(at 35.56 370.84)
@@ -14093,6 +14105,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 307.34) (xy 391.16 312.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b260f5a-c824-4338-a094-a31d631bf915")
+	)
+	(wire
+		(pts
 			(xy 165.1 55.88) (xy 165.1 59.69)
 		)
 		(stroke
@@ -14453,6 +14475,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 322.58) (xy 391.16 320.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d64c4d9-2507-4ce1-a426-77505292c2f4")
+	)
+	(wire
+		(pts
 			(xy 83.82 55.88) (xy 83.82 68.58)
 		)
 		(stroke
@@ -14700,6 +14732,16 @@
 			(type default)
 		)
 		(uuid "68f2ddcd-90eb-4271-9c64-8339b221bbef")
+	)
+	(wire
+		(pts
+			(xy 391.16 320.04) (xy 393.7 320.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "699f4b72-2676-43be-8ff3-f3d6774ad89c")
 	)
 	(wire
 		(pts
@@ -17313,6 +17355,16 @@
 	)
 	(wire
 		(pts
+			(xy 391.16 312.42) (xy 393.7 312.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7d13f8-a245-4cec-8c36-0ffb01c8d0b2")
+	)
+	(wire
+		(pts
 			(xy 556.26 55.88) (xy 561.34 55.88)
 		)
 		(stroke
@@ -17341,6 +17393,16 @@
 		)
 		(uuid "29d2d5be-e898-420c-b1a4-8239628f825f")
 	)
+	(label "DBG"
+		(at 393.7 317.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "780d5b92-675b-46f3-912d-e6a29c91ba14")
+	)
 	(label "VIN_RAW"
 		(at 86.36 138.43 270)
 		(effects
@@ -17360,6 +17422,16 @@
 			(justify left)
 		)
 		(uuid "d3c2a773-4486-48d0-b7dd-1f8e7912d522")
+	)
+	(label "DBG"
+		(at 240.03 284.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbbdab8c-df84-40f8-916c-1673e7f03688")
 	)
 	(global_label "+3V3_SYS"
 		(shape bidirectional)
@@ -27586,6 +27658,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 393.7 314.96 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6f335285-58db-447e-aff9-bb8cf226ed76")
+		(property "Reference" "#PWR9001"
+			(at 393.7 312.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 393.7 318.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 393.7 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 393.7 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 393.7 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87ad230c-05f3-4b58-934b-912e3852315a")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "#PWR9001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 132.08 313.69 0)
 		(unit 1)
@@ -34204,6 +34353,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 398.78 314.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb33ad1e-2b7f-4896-923c-529ba48a94b7")
+		(property "Reference" "J8"
+			(at 401.32 313.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PROBE 1x4 2.54"
+			(at 401.32 316.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 398.78 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 398.78 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 398.78 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "46b15133-85fb-43cf-8932-4d8da3373154")
+		)
+		(pin "2"
+			(uuid "3ec2bfd1-ad25-4e8f-9ad5-ed1fca7ff438")
+		)
+		(pin "3"
+			(uuid "2eab1fc0-67bd-4906-a48f-14e0855665e2")
+		)
+		(pin "4"
+			(uuid "14213e10-6d32-461a-9f0e-cf44da39b47a")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 243.84 314.96 0)
 		(unit 1)
@@ -39447,6 +39686,90 @@
 			(project "ossm-flagship"
 				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 243.84 284.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f19d39b9-e1b8-46af-8e5e-8efabf022d35")
+		(property "Reference" "R602"
+			(at 241.3 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 245.11 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 243.84 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 243.84 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "7e23dadf-cd22-49f2-b3c9-951ac6739d56")
+		)
+		(pin "2"
+			(uuid "da08a685-f592-4d0b-8a10-67a0d261f26d")
+		)
+		(instances
+			(project "ossm-flagship"
+				(path "/2c47b3b6-c278-4366-aef8-d6cb59ca76bb"
+					(reference "R602")
 					(unit 1)
 				)
 			)
