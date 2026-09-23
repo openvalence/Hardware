@@ -44,6 +44,7 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | **Candidate ICs accepted for detailing:** LTC4364, TPS48111, TLV1805 + TLV431, 3x TPS54560B, INA228, THVD1450, 74AHCT125 | new |
 | 2026-09-22 | **Logic power comes from the stamp's own rails**: +5V_SYS = stamp SYS_5V (pad 39, its OR of VIN and USB-C) for the 74AHCT125, the drive's 485_5V and the status LED; +3V3_SYS = stamp SOC_3.3V (pad 28) for the INA228, the RS485 transceiver and every pull-up. A USB-only bench session therefore emits quadrature. The 3.3 V buck becomes accessory-only (+3V3_ACC); the 5 V buck still feeds the stamp's VIN | new; section 10 detail. Also removes pull-ups to a rail that could be dead while the P4 is alive |
 | 2026-09-22 | **Rails detailed** per the TPS54560B datasheet design procedure (values on the Rails sheet): 400 kHz, 4 A per rail, VIN 20-48 V, UVLO start 20 V / stop 17 V | section 10 |
+| 2026-09-22 | **Schematic drawing rule: wire it, don't label it.** Discrete parts are wired to the IC pins they serve and each section reads as one drawn circuit. Labels only where a net leaves the sheet (power symbols for rails, global/hierarchical labels for signals). A sheet of label-to-label connections is not done | new; applies to every sheet |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).
