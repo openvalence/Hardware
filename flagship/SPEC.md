@@ -46,6 +46,7 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | **Rails detailed** per the TPS54560B datasheet design procedure (values on the Rails sheet): 400 kHz, 4 A per rail, VIN 20-48 V, UVLO start 20 V / stop 17 V | section 10 |
 | 2026-09-22 | **Schematic drawing rule: wire it, don't label it.** Discrete parts are wired to the IC pins they serve and each section reads as one drawn circuit. Labels only where a net leaves the sheet (power symbols for rails, global/hierarchical labels for signals). A sheet of label-to-label connections is not done | new; applies to every sheet |
 | 2026-09-22 | **Input fuse: Nano2 453 15 A very-fast (65 V DC, 150 A interrupting), SOLDERED, first in the path after BUS IN.** Supersedes the same-day OMNI-BLOK socket: the GST360A36 (10 A, hiccup-mode protection) cuts out on a short long before this fuse would blow, so it only ever acts with a stiffer source (bigger supply, battery), and a part that almost never blows gains nothing from a socket that sat at its own 10 A rating. About 3 mm tall. **No polyfuse**: the LTC4364 current limit plus the TPS48111 trip are the resettable protection | new; section 3 |
+| 2026-09-22 | **Motor switch detailed** per TPS48111 datasheet Figure 9-14 (values on the sheet): 2 mOhm sense, over-current 15.2 A / 10 ms, short-circuit 30 A / 1.2 us, **latch-off** on over-current (firmware re-arms by toggling MOTOR_EN; veto-able: auto-retry is one resistor removed), pre-charge 100 R via Q403 and Q402's body diode, UVLO ~23 V, MMBT3904 over-temperature beside the FETs, SMBJ48CA on the output. INA_ALERT_N now pulls down a bus-powered EN divider, so an unpowered INA defaults the switch off | section 4 |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).
@@ -57,3 +58,4 @@ document's "likely" option it says so. Do not restate the record here.
 - TIM and heatsink part choice; JLC plated-wall thickness for the via arithmetic.
 - Accessory power output ("a few amps" at 12 V, section 10) exceeds JST GH's ~1 A per pin: needs its own connector class.
 - External regen-resistor connector (section 5): ~4 A pulses at the ~45 V clamp; not a GH job either. Third XT30 or a latching 2-pin power connector.
+- Motor-switch FETs: Q401/Q402 100 V, D2PAK class, low Rds(on), Qg within the 470 nF bootstrap budget; Q403 100 V SOT-23 >= 1 A pulse. Generic Q_NMOS symbols until picked (their D/G/S pin letters need the real part's numbered pads).
