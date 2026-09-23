@@ -62,10 +62,10 @@ resistance is noise: a 5 mm x 40 mm 1 oz path is 8 squares x 0.49 mOhm =
 **Keep the 10 A path on F.Cu and never change layers with it.** Then the via
 question below is only about heat.
 
-If it must transition: one 0.3 mm drill via with 20 um plating (JLC plated
-wall ASSUMED 20 um; confirm on the capabilities page) is 0.019 mm^2 of copper
-and carries ~1.0 A at +20 degC by the internal formula; 0.4 mm drill ~1.3 A.
-16 vias of 0.3 mm per 10 A transition.
+If it must transition: one 0.3 mm drill via with JLC's 18 um average plating
+(capabilities page, 2026-09-23) is 0.017 mm^2 of copper and carries ~0.9 A at
++20 degC by the internal formula; 0.4 mm drill ~1.2 A. 18 vias of 0.3 mm per
+10 A transition.
 
 ## 4. Heat: where it actually goes
 
@@ -76,15 +76,15 @@ tabs. Powered normal case: 6.8 W total in the resistors, ~10 W board.
 
 Path per resistor: tab -> F.Cu pad -> via field -> B.Cu pour -> TIM -> sink.
 
-**Via field.** One 0.3 mm / 20 um via through 1.6 mm: R = L / (k A) =
-1.6e-3 / (390 x 1.9e-8) = ~220 K/W. Fill barely matters: epoxy (k ~0.5) adds
+**Via field.** One 0.3 mm / 18 um via through 1.6 mm: R = L / (k A) =
+1.6e-3 / (390 x 1.7e-8) = ~240 K/W. Fill barely matters: epoxy (k ~0.5) adds
 nothing; copper-paste fill (k ~20) takes it to ~180 K/W. The count is what
 matters:
 
 | Pitch under a ~9 x 7 mm tab | Vias | Field R |
 |---|---|---|
-| 1.0 mm | 48 | 4.5 K/W |
-| 0.8 mm | 80 | 2.7 K/W |
+| 1.0 mm | 48 | 5.0 K/W |
+| 0.8 mm | 80 | 3.0 K/W |
 
 0.8 mm pitch with 0.3 mm drill leaves 0.5 mm hole-to-hole, legal against the
 0.2 floor. **Rule: 0.8 mm pitch, the whole tab, both resistors.**
@@ -137,6 +137,8 @@ the sink is mandatory in every case, not only the abuse one.
   element absorbs before any of the above applies. E = 189 W x t_half. Needs
   the half-stroke time from the bench log against the PWR263S-35 pulse curve;
   a wirewound TO-263 may be the right part instead. Open on SPEC.md.
-- Plated wall thickness assumed 20 um.
+- Plated wall thickness: 18 um average (JLC capabilities page), was assumed 20 um.
+- This section still sizes the retired two-TO-263 bank; the 24 x 2512 chip bank
+  (SPEC 2026-09-23) needs its per-island via count redone at layout.
 - Sink and TIM are catalog-typical, not a chosen part.
 - No measurement. The first board with the INA228 logging is the stamp.
