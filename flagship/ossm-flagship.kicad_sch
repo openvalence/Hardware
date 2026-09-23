@@ -11776,7 +11776,7 @@
 		)
 		(uuid "6d359ab2-c109-49b2-b768-b22af1d42864")
 	)
-	(text "INPUT PROTECTION (record section 3). Self-acting: nothing depends on firmware or a\n  rail it protects. LTC4364-1 datasheet Figure 1 topology.\nF1 Nano2 453 15 A soldered: dead-short backstop. D801 SMBJ45CA (bidirectional:\n  survives a reversed supply) clamps the hot-plug ring.\nQ1 hot-swap FET on HGATE, Q2 ideal-diode FET on DGATE, common SOURCE: reverse\n  polarity AND reverse current blocked, so the regen clamp may sit at 44.5 V.\nR1 2 mOhm CSS2H, pseudo-Kelvin (SENSE and OUT on the inner-edge sense pads): 50 mV =\n  25 A limit (25 mV = 12.5 A folded back into a short). C802 22n C0G: ~0.23 ms in a\n  dead short (36 V x 12.5 A = 450 W in Q1), ~2.4 ms on a mild overload.\nC801 22n on HGATE: ~40 ms power-up ramp, ~0.4 A inrush into ~480 uF (4 x 82 uF bulk\n  + the drive's 150 uF + ceramics): the current limit and timer never engage at\n  start.\nR805/R806 402k/10k: output clamp 51.5 V, ABOVE the 44.5 V regen clamp so regen is\n  never read as an input surge (LTC4364-1 would latch).\nR802/R803/R804 374k/15k/10k: UV 20 V, OV 50 V. D802/D803 15 V gate zeners\n  (datasheet: required at >= 24 V). SHDN and ENOUT unused.\nLATCH-OFF (-1): a fault kills every rail; D6 + R30 27k from VIN_RAW light on FLT\n  with the board dark (FLT sinks <= 2 mA: 1.3 mA at 36 V). Power-cycle to clear.\nQ1/Q2 IPB042N10N3G: SOA ~55 A at 36 V for 0.2 ms (25 C); worst case (OUT just above\n  2.5 V, ~27 A at ~33 V, ~0.25 ms) keeps ~1.75x cold, ~1.35x hot. R2 = INA228 shunt,\n  WSK1216 true 4-terminal Kelvin."
+	(text "INPUT PROTECTION (record section 3). Self-acting: nothing depends on firmware or a\n  rail it protects. LTC4364-1 datasheet Figure 1 topology.\nF1 Nano2 453 15 A soldered: dead-short backstop. D801 SMBJ45CA (bidirectional:\n  survives a reversed supply) clamps the hot-plug ring.\nQ1 hot-swap FET on HGATE, Q2 ideal-diode FET on DGATE, common SOURCE: reverse\n  polarity AND reverse current blocked, so the regen clamp may sit at 44.5 V.\nR1 2 mOhm CSS2H, pseudo-Kelvin (SENSE and OUT on the inner-edge sense pads): 50 mV =\n  25 A limit (25 mV = 12.5 A folded back into a short). C802 22n C0G: ~0.23 ms in a\n  dead short (36 V x 12.5 A = 450 W in Q1), ~2.4 ms on a mild overload.\nC801 22n on HGATE: ~40 ms power-up ramp, ~0.4 A inrush into ~480 uF (4 x 82 uF bulk\n  + the drive's 150 uF + ceramics): the current limit and timer never engage at\n  start.\nR805/R806 402k/10k: output clamp 51.5 V, ABOVE the 44.5 V regen clamp so regen is\n  never read as an input surge (LTC4364-1 would latch).\nR802/R803/R804 374k/17.8k/10k: UV 18.1 V, OV 50.2 V (24-36 V input). D802/D803 15 V\n  gate zeners (datasheet: required at >= 24 V). SHDN and ENOUT unused.\nLATCH-OFF (-1): a fault kills every rail; D6 + R30 27k from VIN_RAW light on FLT\n  with the board dark (FLT sinks <= 2 mA: 1.3 mA at 36 V). Power-cycle to clear.\nQ1/Q2 IPB042N10N3G: SOA ~55 A at 36 V for 0.2 ms (25 C); worst case (OUT just above\n  2.5 V, ~27 A at ~33 V, ~0.25 ms) keeps ~1.75x cold, ~1.35x hot. R2 = INA228 shunt,\n  WSK1216 true 4-terminal Kelvin."
 		(exclude_from_sim no)
 		(at 474.98 196.85 0)
 		(effects
@@ -11859,7 +11859,7 @@
 		)
 		(uuid "eca9c67d-bd61-42a7-a478-edbc1f4f0f64")
 	)
-	(text "MOTOR SWITCH (record section 4). TPS48111 datasheet Figure 9-14 topology:\n  back-to-back N-FETs, common source, pre-charge through Q403 and Q402's body\n  diode.\nOpen = open both ways: back-drive never reaches the board, so the regen shunt\n  sizes for the powered 6.8 W case.  FETs Q401/Q402: 100 V (58.6 V back-EMF),\n  IPB042N10N3G (D2PAK).\nR401 2 mOhm: 30 mV at 15 A. OC R404 39.2k = 15.2 A for 10 ms (C402 680n, R405\n  100k = LATCH-OFF; firmware re-arms by toggling MOTOR_EN). SC R403 3.4k = 30\n  A in 1.2 us.\nIMON R406 8.25k: 3.0 V at 20 A into an ADC1 pin.  CBST C401 470n.  UVLO\n  R407/R408 470k/24.9k: on above ~23 V.  Q404 sits beside Q401/Q402 in layout:\n  150 C cutoff.\nMOTOR_EN floats during P4 boot: R409 pulldown + internal pulldown = off.\n  INA_ALERT_N (open drain) pulls EN low: INA228 limits cut the motor with no\n  MCU.\nPRE-CHARGE: drive input measured 150 uF (hw-x65). PRECHARGE_EN high ~75 ms\n  (R412 100R, 0.36 A peak, ~0.1 J), then MOTOR_EN high, then PRECHARGE_EN low.\nD401 SMBJ48CA: stands off above the 45 V clamp, clamps under the 100 V FETs;\n  catches the hot-plug ring of the drive's ceramic input."
+	(text "MOTOR SWITCH (record section 4). TPS48111 datasheet Figure 9-14 topology: back-to-\n  back N-FETs, common source, pre-charge through Q403 and Q402's body diode.\nOpen = open both ways: back-drive never reaches the board, so the regen shunt sizes\n  for the powered 6.8 W case.  FETs Q401/Q402: 100 V (58.6 V back-EMF), IPB042N10N3G\n  (D2PAK).\nR401 2 mOhm: 30 mV at 15 A. OC R404 39.2k = 15.2 A for 10 ms (C402 680n, R405 100k =\n  LATCH-OFF; firmware re-arms by toggling MOTOR_EN). SC R403 3.4k = 30 A in 1.2 us.\nIMON R406 8.25k: 3.0 V at 20 A into an ADC1 pin.  CBST C401 1u. UVLO R407/R408\n  470k/30.1k: on 19.6 V, off 18.4 V (24-36 V input; the EN node reads 3.31 V at 55\n  V, safe for P4 G23).  Q404 sits beside Q401/Q402 in layout: 150 C cutoff.\nMOTOR_EN floats during P4 boot: R409 pulldown + internal pulldown = off. INA_ALERT_N\n  (open drain) pulls EN low: INA228 limits cut the motor with no MCU.\nPRE-CHARGE: drive input measured 150 uF (hw-x65). PRECHARGE_EN high ~75 ms (R412\n  100R, 0.36 A peak, ~0.1 J), then MOTOR_EN high, then PRECHARGE_EN low.\nD401 SMBJ48CA: stands off above the 45 V clamp, clamps under the 100 V FETs; catches\n  the hot-plug ring of the drive's ceramic input."
 		(exclude_from_sim no)
 		(at 588.01 285.75 0)
 		(effects
@@ -26970,7 +26970,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "24.9k"
+		(property "Value" "30.1k"
 			(at 378.46 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35594,7 +35594,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15k"
+		(property "Value" "17.8k"
 			(at 54.61 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
