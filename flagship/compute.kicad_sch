@@ -3,8 +3,131 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "c8d93a19-1a8c-428f-b3f5-f89cc40da3c2")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LED:WS2812B"
 			(pin_names
 				(offset 0.254)
@@ -2482,16 +2605,26 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "COMPUTE (record section 8; SPEC: no RP2350, the P4 LP core emits quadrature). Stamp-P4 + Stamp-AddOn C6 stacked on top (SDIO G42-G48, not castellated).\nFixed pins only: VIN (14) from +5V, the stamp ORs it with its own USB-C 5V and makes SOC_3.3V itself; all GND pads; CHIP_EN + G35 buttons (stamp has 10k pull-ups).\nG35 appears on pads 36 AND 48 in M5's own symbol and schematic: both wired to P4_BOOT.\nPIN ASSIGNMENT FOLLOWS LAYOUT (operator ruling): each function net below gets the stamp pad nearest its circuit once parts are placed.\n  QUAD_A, QUAD_B          LP GPIO (LPG0-15) for the LP-core emitter; avoid LPG14/15 (LP UART console)\n  I2C_SDA, I2C_SCL        LPG11 / LPG9 are the module I2C (shared with the add-on connector; SPEC open item)\n  RS485_TX, RS485_RX, RS485_DE   any HP GPIO via the matrix (UART RS485 half-duplex mode)\n  MOTOR_EN, PRECHARGE_EN, MSW_FLT_N, INA_ALERT_N, CLAMP_MON, DRV_ALM, DRV_RDY, DRV_ZO, FAN_PWM, FAN_TACH, LED_DATA\n  MSW_IMON, THERM          ADC1 (G16-G23)\n  Avoid straps: G34 (JTAG enable), G35 (boot), G36, G37/G38 (UART0 console).\nD5: one status pixel for Flux. 3.3 V data into a 5 V WS2812B is marginal: TODO(detailing) pick a 3.3 V-tolerant pixel or level-shift through a spare AHCT125 gate."
+	(text "COMPUTE (record section 8; SPEC: no RP2350, the P4 LP core emits quadrature). Stamp-P4 + Stamp-AddOn C6 stacked on\n  top (SDIO G42-G48, not castellated).\nFixed pins only: VIN (14) from +5V, the stamp ORs it with its own USB-C 5V and makes SOC_3.3V itself; all GND pads.\n  No reset button: CHIP_EN and G35 go to tweezer pads TP901 / TP903 beside GND pad TP902 (stamp has 10k pull-ups).\nG35 appears on pads 36 AND 48 in M5's own symbol and schematic: both wired to P4_BOOT.\nPIN ASSIGNMENT FOLLOWS LAYOUT (operator ruling): each function net below gets the stamp pad nearest its circuit\n  once parts are placed.\n  QUAD_A, QUAD_B          LP GPIO (LPG0-15) for the LP-core emitter; avoid LPG14/15 (LP UART console)\n  I2C_SDA, I2C_SCL        LPG11 / LPG9 are the module I2C (shared with the add-on connector; SPEC open item)\n  RS485_TX, RS485_RX, RS485_DE   any HP GPIO via the matrix (UART RS485 half-duplex mode)\n  MOTOR_EN, PRECHARGE_EN, MSW_FLT_N, INA_ALERT_N, CLAMP_MON, DRV_ALM, DRV_RDY, FAN_PWM, FAN_TACH, LED_DATA,\n    BTN_HOME, BTN_PAIR\n  MSW_IMON, THERM, SHUNT_TEMP   ADC1 (G16-G23)\n  Avoid straps: G34 (JTAG enable), G35 (boot), G36, G37/G38 (UART0 console). Buttons NEVER on a strap: a button\n    held at power-on must reach firmware, not the ROM.\nD5 status pixel: LED_DATA -> AHCT125 gate 3 (Drive IO) -> LED_DIN at 5 V (WS2812B VIH = 0.7 VDD).\nSW1 HOME: press = home, hold = reset (firmware, on release). SW2 PAIR: hold = pair, held at power-on = AP config\n  mode, press TBD. Both use the P4's internal pull-ups.\nRescue: short TP901 (EN) to TP902 = reset; hold TP903 (BOOT) to TP902 while resetting = ROM download mode (USB\n  flashing enters it on its own)."
 		(exclude_from_sim no)
-		(at 20 40 0)
+		(at 190.5 20.32 0)
 		(effects
 			(font
 				(size 1.5 1.5)
 			)
-			(justify left bottom)
+			(justify left top)
 		)
 		(uuid "f575d6f4-6928-4f82-954f-8eed46ac9732")
+	)
+	(label "P4_BOOT"
+		(at 83.82 165.1 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "497286b8-71e7-4316-bd3e-27e8ef929419")
 	)
 	(label "P4_BOOT"
 		(at 186.69 101.6 0)
@@ -2504,6 +2637,16 @@
 		(uuid "4f35ebbc-02c6-4eaa-baed-5f5d2637acfa")
 	)
 	(label "P4_EN"
+		(at 63.5 165.1 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9104a2b-808b-45f8-9cad-fb1327545c60")
+	)
+	(label "BTN_HOME"
 		(at 34.29 149.86 180)
 		(effects
 			(font
@@ -2513,7 +2656,7 @@
 		)
 		(uuid "cae263bd-f0c2-4f6d-860a-68229a3b9708")
 	)
-	(label "P4_BOOT"
+	(label "BTN_PAIR"
 		(at 34.29 170.18 180)
 		(effects
 			(font
@@ -2631,7 +2774,7 @@
 			)
 		)
 	)
-	(global_label "LED_DATA"
+	(global_label "LED_DIN"
 		(shape bidirectional)
 		(at 232.41 149.86 180)
 		(effects
@@ -2643,6 +2786,28 @@
 		(uuid "421a28ec-f431-47e5-baa8-c8c745691965")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 232.41 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 73.66 165.1 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "712e8393-c473-4274-b772-65fd69d4352f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.66 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2918,6 +3083,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 63.5 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45c891dd-d6b8-486b-8b13-29cb835d1d7d")
+		(property "Reference" "TP901"
+			(at 64.77 160.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "EN"
+			(at 64.77 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 63.5 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "4f10f5a9-ddf3-43d5-9dd3-7a2ad04f302f")
+		)
+		(instances
+			(project ""
+				(path "/c8d93a19-1a8c-428f-b3f5-f89cc40da3c2"
+					(reference "TP901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 39.37 149.86 0)
 		(unit 1)
@@ -2939,7 +3185,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RESET"
+		(property "Value" "HOME (hold: RESET)"
 			(at 39.37 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2992,6 +3238,168 @@
 			(project ""
 				(path "/c8d93a19-1a8c-428f-b3f5-f89cc40da3c2"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 83.82 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "911ea791-21bb-4283-8d83-a65a56fe4a47")
+		(property "Reference" "TP903"
+			(at 85.09 160.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BOOT"
+			(at 85.09 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 83.82 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "c8607aed-c73f-48f2-a82d-417ba45236ed")
+		)
+		(instances
+			(project ""
+				(path "/c8d93a19-1a8c-428f-b3f5-f89cc40da3c2"
+					(reference "TP903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 73.66 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9340dd72-2943-48ab-98e7-737bb9b6bea4")
+		(property "Reference" "TP902"
+			(at 74.93 160.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 73.66 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "434f5212-279b-4e63-87c6-59b5dff5e348")
+		)
+		(instances
+			(project ""
+				(path "/c8d93a19-1a8c-428f-b3f5-f89cc40da3c2"
+					(reference "TP902")
 					(unit 1)
 				)
 			)
@@ -3530,7 +3938,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BOOT"
+		(property "Value" "PAIR (held at power-on: AP)"
 			(at 39.37 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
