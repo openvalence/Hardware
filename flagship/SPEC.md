@@ -40,6 +40,8 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | Harness: pre-crimped GH leads on the board end, operator crimps the far end | new |
 | 2026-09-22 | **Motion is emitted by the P4 (LP-core quadrature); no RP2350 on the board** | supersedes section 8's "plus an RP2350 for motion"; operator dropped it after the P4 LP-core emitter proved out on the bench |
 | 2026-09-22 | **Passives: common, slightly larger sizes.** 0805 default, 1206 for power, bulk and high-voltage positions, nothing below 0603. Operator picks connectors; the schematic carries generic connector placeholders until then | new |
+| 2026-09-22 | **Input protection latches off on a fault (LTC4364-1), with a red fault LED powered from the raw input and lit by FLT.** A latched fault kills every rail including the MCU's, so the indicator cannot depend on the board | new; section 3 detail |
+| 2026-09-22 | **Candidate ICs accepted for detailing:** LTC4364, TPS48111, TLV1805 + TLV431, 3x TPS54560B, INA228, THVD1450, 74AHCT125 | new |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).

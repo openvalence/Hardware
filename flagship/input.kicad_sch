@@ -495,6 +495,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Q_NMOS"
 			(pin_numbers
 				(hide yes)
@@ -1670,7 +1871,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "INPUT PROTECTION (record section 3). Self-acting: nothing here depends on firmware or on a rail it protects.\nJobs: reverse polarity, reverse-current blocking (required so the regen clamp can sit at ~45 V, section 5), inrush, overcurrent.\nCandidate U1 LTC4364IS-2 (SO-16): surge stopper + ideal diode in one part. -2 = auto-retry after fault, -1 = latch off: ruling needed.\nTODO(detailing): wire Q1/Q2/R1 per LTC4364 datasheet Figure 1; Q1 chosen off its pulse SOA curve (1000 uF at 36 V = ~0.65 J in linear region).\nR2 is the INA228 shunt: Kelvin taps INA_SENSE_P (BUS_PROT side) and INA_SENSE_N (+BUS side) route as a tight pair to the Sensing sheet.\nBulk: C1/C2 polymer mirrored about the stamp centerline (SPEC ruling), C3/C4 MLCC for HF. Decoupling only; caps do nothing for regen."
+	(text "INPUT PROTECTION (record section 3). Self-acting: nothing here depends on firmware or on a rail it protects.\nJobs: reverse polarity, reverse-current blocking (required so the regen clamp can sit at ~45 V, section 5), inrush, overcurrent.\nU1 LTC4364IS-1 (SO-16): surge stopper + ideal diode in one part. LATCH-OFF (-1, operator ruling 2026-09-22): a fault kills every rail, MCU included,\nso D6 is powered from VIN_RAW and lit by FLT: the fault shows with the board dark. Power-cycle clears it. TODO(detailing): confirm FLT pin's voltage rating vs VIN.\nTODO(detailing): wire Q1/Q2/R1 per LTC4364 datasheet Figure 1; Q1 chosen off its pulse SOA curve (1000 uF at 36 V = ~0.65 J in linear region).\nR2 is the INA228 shunt: Kelvin taps INA_SENSE_P (BUS_PROT side) and INA_SENSE_N (+BUS side) route as a tight pair to the Sensing sheet.\nBulk: C1/C2 polymer mirrored about the stamp centerline (SPEC ruling), C3/C4 MLCC for HF. Decoupling only; caps do nothing for regen."
 		(exclude_from_sim no)
 		(at 20 150 0)
 		(effects
@@ -1680,6 +1881,16 @@
 			(justify left bottom)
 		)
 		(uuid "2377f9a8-4619-466c-8d16-4a87c9753471")
+	)
+	(wire
+		(pts
+			(xy 59.69 125.73) (xy 59.69 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "733927aa-1e04-44a6-bdd5-d16f2e8a297f")
 	)
 	(label "VIN_RAW"
 		(at 25.4 80.01 180)
@@ -1701,6 +1912,26 @@
 		)
 		(uuid "225a93b5-b103-4336-adc8-686e21a040e8")
 	)
+	(label "FLT_LED_A"
+		(at 59.69 114.3 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "70909d7b-2934-48e0-9075-33a7692405a9")
+	)
+	(label "LTC_FLT_N"
+		(at 59.69 133.35 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9287eafe-10b8-48cc-96a8-36f06e180351")
+	)
 	(label "BUS_PROT"
 		(at 170.18 69.85 90)
 		(effects
@@ -1720,6 +1951,26 @@
 			(justify right bottom)
 		)
 		(uuid "d87bf061-0d5c-4b1b-aa8c-240fe70aaaf1")
+	)
+	(label "VIN_RAW"
+		(at 59.69 106.68 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2aed4e2-8b1b-4aba-9c22-f1526c676b4f")
+	)
+	(label "LTC_FLT_N"
+		(at 124.46 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f13b3eb2-b0bd-4ffd-ab40-db28b8ae1dfd")
 	)
 	(global_label "INA_SENSE_N"
 		(shape bidirectional)
@@ -2128,6 +2379,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 59.69 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1a5be4bd-12c6-41bd-8137-0b779d2a6294")
+		(property "Reference" "R30"
+			(at 57.15 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "18k"
+			(at 62.23 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 57.912 110.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6eb35693-996e-4aa7-9e18-3d6b47548219")
+		)
+		(pin "2"
+			(uuid "2b564509-92a5-44fe-a994-2f9889e71643")
+		)
+		(instances
+			(project ""
+				(path "/8c22eeb1-303f-4db8-b0be-7d6b88218484"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Q_NMOS")
 		(at 80.01 69.85 0)
 		(unit 1)
@@ -2392,7 +2722,7 @@
 				)
 			)
 		)
-		(property "Value" "LTC4364IS-2"
+		(property "Value" "LTC4364IS-1"
 			(at 110.49 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2568,6 +2898,85 @@
 			(project ""
 				(path "/8c22eeb1-303f-4db8-b0be-7d6b88218484"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 59.69 129.54 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d4ab591-3508-44ee-ab8e-f2c7d1991c65")
+		(property "Reference" "D6"
+			(at 59.69 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED_FAULT"
+			(at 59.69 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+			(at 59.69 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 59.69 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9fe05c21-2200-486e-9c66-903c5314fdc7")
+		)
+		(pin "2"
+			(uuid "9aed9dc2-eaf2-425b-bc63-e938fda9c9d8")
+		)
+		(instances
+			(project ""
+				(path "/8c22eeb1-303f-4db8-b0be-7d6b88218484"
+					(reference "D6")
 					(unit 1)
 				)
 			)
