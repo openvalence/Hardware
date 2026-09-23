@@ -50,6 +50,7 @@ document's "likely" option it says so. Do not restate the record here.
 | 2026-09-22 | **Regen shunt detailed**: TLV1805 + TLV431 self-acting clamp, ON 44.7 V / OFF 41.7 V (348k / 10k / 1.40M), 1 nF divider filter, 47 R gate drive, the 10k + 3.3k CLAMP_MON divider doubles as the gate pull-down (clamp off whenever +12V is down), SHDN tied low (always armed), SMBJ48A across the switch | section 5 |
 | 2026-09-22 | **Connectors are placed by the operator during layout.** Schematic sheets end every off-board signal in a named net (global label); existing generic connector placeholders are disposable | new |
 | 2026-09-22 | **Drive IO detailed**: THVD1450 (DE and /RE tied, 120 R termination DNP), SM712 RS485 ESD at the cable end, KiCad 74AHCT125 per-gate symbol (gates 1-2 drive DRV_PU+ / DRV_DIR+, gates 3-4 disabled), status inputs 10k pull-up to +3V3_SYS + 1k series into the P4 | sections 11-12 |
+| 2026-09-22 | **Sensing detailed**: INA228 at 0x40 on the Kelvin taps, ALERT shared with the motor-switch EN; I2C pull-ups fitted only if the stamp/add-on lacks them; thermistor 10k pull-up + 1k/100n into ADC1; fan supply by solder jumper (12 V or 5 V), tach 10k pull-up + 1k series, **PWM open-drain through a 2N7002** because a fan pulls its PWM input to 5 V and the P4 is not 5 V tolerant (firmware inverts) | sections 10, 12 |
 
 ## Open (from the record's section 13, plus today)
 - eFuse coverage at 10 A / 36 V (section 13).
