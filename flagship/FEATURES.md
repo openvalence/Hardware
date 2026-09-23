@@ -112,6 +112,20 @@ Two connectors on each side of the board, mirrored:
   shows a "no E-stop found" warning and can be bypassed for the current session
   only; a connected button can never be bypassed.
 
+## Accessories (optional)
+
+- 12 V pump output (fused) with a PWM signal for a common MOSFET driver module at
+  the pump: made for a small peristaltic lube pump.
+- PWM signal output for a bigger, externally powered pump.
+- Fused bus output (24-36 V, transients to ~51 V) for your own 60 V-rated buck.
+- Neopixel output that continues the on-board status LED's chain, fused 5 V.
+- Button header: HOME and PAIR in parallel with the on-board buttons, plus two
+  spare inputs, for custom cases.
+- Qwiic / STEMMA QT port on its own I2C bus for small screens and sensors.
+- 2x6 GPIO header with a UART and six general-purpose I/Os.
+- Anything smarter than a switch or a PWM belongs on its own board, talking to
+  this one over Valence.
+
 ## Sensing and cooling
 
 - Thermistor input for an external temperature probe.
