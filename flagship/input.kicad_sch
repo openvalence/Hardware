@@ -2023,7 +2023,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "INPUT PROTECTION (record section 3). Self-acting: nothing here depends on firmware or on a rail it protects.\nF1: OMNI-BLOK + Nano2 453 15 A (65 V DC), first in the path: the dead-short backstop behind a failed LTC4364 (SPEC ruling). No polyfuse.\nJobs: reverse polarity, reverse-current blocking (required so the regen clamp can sit at ~45 V, section 5), inrush, overcurrent.\nU1 LTC4364IS-1 (SO-16): surge stopper + ideal diode in one part. LATCH-OFF (-1, operator ruling 2026-09-22): a fault kills every rail, MCU included,\nso D6 is powered from VIN_RAW and lit by FLT: the fault shows with the board dark. Power-cycle clears it. TODO(detailing): confirm FLT pin's voltage rating vs VIN.\nTODO(detailing): wire Q1/Q2/R1 per LTC4364 datasheet Figure 1; Q1 chosen off its pulse SOA curve (1000 uF at 36 V = ~0.65 J in linear region).\nR2 is the INA228 shunt: Kelvin taps INA_SENSE_P (BUS_PROT side) and INA_SENSE_N (+BUS side) route as a tight pair to the Sensing sheet.\nBulk: C1/C2 polymer mirrored about the stamp centerline (SPEC ruling), C3/C4 MLCC for HF. Decoupling only; caps do nothing for regen."
+	(text "INPUT PROTECTION (record section 3). Self-acting: nothing here depends on firmware or on a rail it protects.\nF1: Nano2 453 15 A (65 V DC) soldered, first in the path: dead-short backstop; the GST360A36's hiccup protection acts first on its own supply (SPEC ruling). No polyfuse.\nJobs: reverse polarity, reverse-current blocking (required so the regen clamp can sit at ~45 V, section 5), inrush, overcurrent.\nU1 LTC4364IS-1 (SO-16): surge stopper + ideal diode in one part. LATCH-OFF (-1, operator ruling 2026-09-22): a fault kills every rail, MCU included,\nso D6 is powered from VIN_RAW and lit by FLT: the fault shows with the board dark. Power-cycle clears it. TODO(detailing): confirm FLT pin's voltage rating vs VIN.\nTODO(detailing): wire Q1/Q2/R1 per LTC4364 datasheet Figure 1; Q1 chosen off its pulse SOA curve (1000 uF at 36 V = ~0.65 J in linear region).\nR2 is the INA228 shunt: Kelvin taps INA_SENSE_P (BUS_PROT side) and INA_SENSE_N (+BUS side) route as a tight pair to the Sensing sheet.\nBulk: C1/C2 polymer mirrored about the stamp centerline (SPEC ruling), C3/C4 MLCC for HF. Decoupling only; caps do nothing for regen."
 		(exclude_from_sim no)
 		(at 20 150 0)
 		(effects
@@ -3256,7 +3256,7 @@
 				)
 			)
 		)
-		(property "Value" "15A 453 (0453015.MR)"
+		(property "Value" "15A 453 soldered"
 			(at 44.45 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3266,7 +3266,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuseholder_Littelfuse_Nano2_154x"
+		(property "Footprint" "Fuse:Fuse_Littelfuse-NANO2-451_453"
 			(at 44.45 81.788 90)
 			(hide yes)
 			(show_name no)
