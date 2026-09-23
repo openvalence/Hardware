@@ -1626,7 +1626,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+5V_SYS"
 		(shape bidirectional)
 		(at 80.01 116.84 0)
 		(effects
@@ -1736,7 +1736,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+5V_SYS"
 		(shape bidirectional)
 		(at 224.79 52.07 180)
 		(effects
@@ -1802,7 +1802,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 160.02 146.05 90)
 		(effects
@@ -1846,7 +1846,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 175.26 146.05 90)
 		(effects
@@ -1890,7 +1890,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+5V_SYS"
 		(shape bidirectional)
 		(at 80.01 127 0)
 		(effects
@@ -1978,7 +1978,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 78.74 55.88 0)
 		(effects
@@ -2000,7 +2000,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+5V_SYS"
 		(shape bidirectional)
 		(at 80.01 119.38 0)
 		(effects
@@ -2022,7 +2022,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 190.5 146.05 90)
 		(effects

@@ -1403,7 +1403,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 39.37 55.88 90)
 		(effects
@@ -1425,7 +1425,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 144.78 45.72 90)
 		(effects
@@ -1513,7 +1513,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 91.44 74.93 0)
 		(effects
@@ -1535,7 +1535,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 129.54 45.72 90)
 		(effects
@@ -1733,7 +1733,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 69.85 125.73 90)
 		(effects
@@ -1865,7 +1865,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 190.5 156.21 90)
 		(effects

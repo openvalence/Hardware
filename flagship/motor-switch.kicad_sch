@@ -1619,7 +1619,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 69.85 135.89 90)
 		(effects
@@ -1663,7 +1663,7 @@
 			)
 		)
 	)
-	(global_label "+3V3"
+	(global_label "+3V3_SYS"
 		(shape bidirectional)
 		(at 54.61 135.89 90)
 		(effects
