@@ -11,11 +11,11 @@ The full priced table lives outside the repo (regenerable); the numbers that mat
 
 | Per board | Parts only | Parts + PCB |
 |---|---|---|
-| 5 boards | ~$75.20 | ~$93.60 (PCB $18.40/board) |
-| 40 boards | ~$65.74 | ~$68.54 (PCB $2.80/board, the $112 JLCPCB quote) |
+| 5 boards | ~$75.69 | ~$94.09 (PCB $18.40/board) |
+| 40 boards | ~$66.15 | ~$68.95 (PCB $2.80/board, the $112 JLCPCB quote) |
 
 Totals include the regen bank (24 x AS122WJ0201T4E 200R 2512, LCSC C2770484, ~$0.08 each, ~$2/board) and the
-fan driver and filter, the bus OVP trip and the connector protection (~$0.80 together). Assembly fees
+fan driver and filter, the bus OVP trip, the connector protection and the external E-stop (~$1.30 together). Assembly fees
 (JLC's per-extended-part loading fee matters at 5 boards) are not included.
 
 ## Cost drivers (per board, 40-board run)

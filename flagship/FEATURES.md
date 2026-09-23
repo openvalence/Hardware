@@ -104,6 +104,14 @@ Two connectors on each side of the board, mirrored:
   watchdogs catch a hang, and bare EN / BOOT / GND pads allow a tweezer reset
   or forced flashing mode for rescue. USB flashing needs no buttons.
 
+## External E-stop
+
+- 3-pin latching-button input (COM, NC, NO). Pressing the button, or unplugging it,
+  cuts motor power in hardware through the motor switch, with no firmware involved.
+- Firmware sees normal, pressed, unplugged and miswired states. An unplugged E-stop
+  shows a "no E-stop found" warning and can be bypassed for the current session
+  only; a connected button can never be bypassed.
+
 ## Sensing and cooling
 
 - Thermistor input for an external temperature probe.
