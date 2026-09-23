@@ -495,6 +495,158 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1871,7 +2023,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "INPUT PROTECTION (record section 3). Self-acting: nothing here depends on firmware or on a rail it protects.\nJobs: reverse polarity, reverse-current blocking (required so the regen clamp can sit at ~45 V, section 5), inrush, overcurrent.\nU1 LTC4364IS-1 (SO-16): surge stopper + ideal diode in one part. LATCH-OFF (-1, operator ruling 2026-09-22): a fault kills every rail, MCU included,\nso D6 is powered from VIN_RAW and lit by FLT: the fault shows with the board dark. Power-cycle clears it. TODO(detailing): confirm FLT pin's voltage rating vs VIN.\nTODO(detailing): wire Q1/Q2/R1 per LTC4364 datasheet Figure 1; Q1 chosen off its pulse SOA curve (1000 uF at 36 V = ~0.65 J in linear region).\nR2 is the INA228 shunt: Kelvin taps INA_SENSE_P (BUS_PROT side) and INA_SENSE_N (+BUS side) route as a tight pair to the Sensing sheet.\nBulk: C1/C2 polymer mirrored about the stamp centerline (SPEC ruling), C3/C4 MLCC for HF. Decoupling only; caps do nothing for regen."
+	(text "INPUT PROTECTION (record section 3). Self-acting: nothing here depends on firmware or on a rail it protects.\nF1: OMNI-BLOK + Nano2 453 15 A (65 V DC), first in the path: the dead-short backstop behind a failed LTC4364 (SPEC ruling). No polyfuse.\nJobs: reverse polarity, reverse-current blocking (required so the regen clamp can sit at ~45 V, section 5), inrush, overcurrent.\nU1 LTC4364IS-1 (SO-16): surge stopper + ideal diode in one part. LATCH-OFF (-1, operator ruling 2026-09-22): a fault kills every rail, MCU included,\nso D6 is powered from VIN_RAW and lit by FLT: the fault shows with the board dark. Power-cycle clears it. TODO(detailing): confirm FLT pin's voltage rating vs VIN.\nTODO(detailing): wire Q1/Q2/R1 per LTC4364 datasheet Figure 1; Q1 chosen off its pulse SOA curve (1000 uF at 36 V = ~0.65 J in linear region).\nR2 is the INA228 shunt: Kelvin taps INA_SENSE_P (BUS_PROT side) and INA_SENSE_N (+BUS side) route as a tight pair to the Sensing sheet.\nBulk: C1/C2 polymer mirrored about the stamp centerline (SPEC ruling), C3/C4 MLCC for HF. Decoupling only; caps do nothing for regen."
 		(exclude_from_sim no)
 		(at 20 150 0)
 		(effects
@@ -1892,15 +2044,15 @@
 		)
 		(uuid "733927aa-1e04-44a6-bdd5-d16f2e8a297f")
 	)
-	(label "VIN_RAW"
-		(at 25.4 80.01 180)
+	(label "VIN_CONN"
+		(at 40.64 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "1056a5f5-24e6-4d94-932a-ab7620c7368e")
+		(uuid "0092d2bf-be70-4ff9-9218-d74d26b01d13")
 	)
 	(label "VIN_RAW"
 		(at 96.52 119.38 180)
@@ -1941,6 +2093,26 @@
 			(justify left bottom)
 		)
 		(uuid "97d0210d-2508-4f3d-a76a-ec751ff74ddb")
+	)
+	(label "VIN_RAW"
+		(at 48.26 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e88c615-7caa-4dae-b432-cd3a99ee4c99")
+	)
+	(label "VIN_CONN"
+		(at 25.4 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bfadc074-4a33-4160-bbab-a53c74220503")
 	)
 	(label "BUS_PROT"
 		(at 96.52 101.6 180)
@@ -3058,6 +3230,85 @@
 			(project ""
 				(path "/8c22eeb1-303f-4db8-b0be-7d6b88218484"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 44.45 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6530f19b-65c8-45e7-b699-8b44ac826ae1")
+		(property "Reference" "F1"
+			(at 44.45 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15A 453 (0453015.MR)"
+			(at 44.45 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Littelfuse_Nano2_154x"
+			(at 44.45 81.788 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 44.45 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de544e65-114b-4ccc-8fd4-61136db0ffe6")
+		)
+		(pin "2"
+			(uuid "fcacaccf-f295-43f4-9553-5e35a6543bb5")
+		)
+		(instances
+			(project ""
+				(path "/8c22eeb1-303f-4db8-b0be-7d6b88218484"
+					(reference "F1")
 					(unit 1)
 				)
 			)
