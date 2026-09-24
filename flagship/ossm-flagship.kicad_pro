@@ -704,6 +704,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -723,34 +731,6 @@
     [
       "2c47b3b6-c278-4366-aef8-d6cb59ca76bb",
       "ossm-flagship"
-    ],
-    [
-      "fbe3b3cf-8478-471d-8913-deded61c4ca5",
-      "Input protection"
-    ],
-    [
-      "1c96849d-a780-4efa-a6a1-e437eb086016",
-      "Rails"
-    ],
-    [
-      "536774a1-443d-4097-8c4b-0be71552df14",
-      "Sensing"
-    ],
-    [
-      "fdfe8f95-7052-4586-946e-9849eb55dcd4",
-      "Motor switch"
-    ],
-    [
-      "1f4812c1-c606-4d95-bec4-88d41038c7a0",
-      "Compute"
-    ],
-    [
-      "fb95057d-29f8-4153-9297-23a40f0bf4bb",
-      "Regen shunt"
-    ],
-    [
-      "fb4acf6c-a068-41e9-b9dd-92aceb3b6b4b",
-      "Drive IO"
     ]
   ],
   "text_variables": {},
