@@ -114,10 +114,9 @@ Two connectors on each side of the board, mirrored:
 
 ## Accessories (optional)
 
-- 12 V pump output (fused) with a PWM signal for a common MOSFET driver module at
-  the pump: made for a small peristaltic lube pump.
+- 12 V pump output behind a 2.5 A electronic fuse, with a PWM signal for a common
+  MOSFET driver module at the pump: made for a small peristaltic lube pump.
 - PWM signal output for a bigger, externally powered pump.
-- Fused input loopback (your supply's 24-36 V, never regen) for your own buck.
 - Neopixel output that continues the on-board status LED's chain, fused 5 V.
 - Button header: HOME and PAIR in parallel with the on-board buttons, plus two
   spare inputs, for custom cases.
